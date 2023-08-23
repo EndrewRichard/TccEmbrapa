@@ -109,7 +109,7 @@ export const styles = StyleSheet.create ({
       fontStyle: 'italic'
    },
    hyperlinkStyle: {
-      color: 'blue',
+      color: '#002B7F',
     },
    textShadow: {
       textShadowColor: 'black',

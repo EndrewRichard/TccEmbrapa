@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -37,22 +37,16 @@ const DetailsScreen = ({ route }) => {
   // Função para renderizar os ícones dos usos econômicos
   const renderUsageIcon = (usage) => {
     switch (usage) {
-      case 'ALIMENTACAO':
-        return <Ionicons name="restaurant" size={24} color="green" />;
-      case 'ARTESANATO':
-        return <Ionicons name="hammer" size={24} color="green" />;
-      case 'AROMATICO':
-        return <Ionicons name="leaf" size={24} color="green" />;
-      case 'CORT':
-        return <Ionicons name="cut" size={24} color="green" />;
-      case 'COND':
-        return <Ionicons name="cloudy" size={24} color="green" />;
-      // Adicione mais cases para outros usos econômicos
       default:
         return null;
     }
 
   };
+
+  const [mudasSementesOpen, setMudasSementesOpen] = useState(false);
+  const [ondeOcorreOpen, setOndeOcorreOpen] = useState(false);
+  const [caracteristicasSoloOpen, setCaracteristicasSoloOpen] = useState(false);
+
   
 
   return (
@@ -64,12 +58,12 @@ const DetailsScreen = ({ route }) => {
 
             {item.LINK && (
               <TouchableOpacity style={styles.linkIconContainer} onPress={() => handleOpenURL(item.LINK)}>
-                <Ionicons name="globe" size={24} color="blue" />
+                <Ionicons name="globe" size={24} color="#002B7F" />
               </TouchableOpacity>
             )}
 
           </View>
-          <Text style={styles.autor}>{item.AUTOR}{'\n'}{'\n'}</Text>
+          <Text style={styles.autor}>{item.AUTOR}{'\n'}</Text>
 
 
           <View style={styles.infoContainer}>
@@ -105,14 +99,112 @@ const DetailsScreen = ({ route }) => {
           </View>
 
 
-          <View>
-            <Text style={styles.sectionTitle}>Mudas e sementes:</Text>
-            <Text style={styles.moreInfoTextBlack}><Text style={styles.attributeNameBlack}>Dsenvolvimento da muda:</Text> {item.DESENVOL_MUDA_CAMPO}</Text>
-            <Text style={styles.moreInfoTextBlack}><Text style={styles.attributeNameBlack}>Tempo médio plantio:</Text> {item.TEMPO_MEDIO_PLANTIO}</Text>
-            <Text style={styles.moreInfoTextBlack}><Text style={styles.attributeNameBlack}>Altura média:</Text> {item.ALTURA_MEDIA}</Text>
-            <Text style={styles.moreInfoTextBlack}><Text style={styles.attributeNameBlack}>Forma Biológica:</Text> {item.FORMA_BIOLOGICA}</Text>
-            <Text style={styles.moreInfoTextBlack}><Text style={styles.attributeNameBlack}>Autor:</Text> {item.AUTOR}</Text>
-          </View>
+          {/* Seção Mudas e Sementes */}
+          <TouchableOpacity
+            style={styles.sectionTitleContainer}
+            onPress={() => setMudasSementesOpen(!mudasSementesOpen)}
+          >
+            <Text style={styles.sectionTitle}>Mudas e Sementes</Text>
+            <Ionicons
+              name={mudasSementesOpen ? 'chevron-down' : 'chevron-forward'}
+              size={24}
+              color="#006122"
+            />
+          </TouchableOpacity>
+          {mudasSementesOpen && (
+            <View style={styles.sectionContent}>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Desenvolvimento da muda:</Text> {item.DESENVOL_MUDA_CAMPO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Tempo médio plantio:</Text> {item.TEMPO_MEDIO_PLANTIO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Altura média:</Text> {item.ALTURA_MEDIA}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Forma Biológica:</Text> {item.FORMA_BIOLOGICA}
+              </Text>
+            </View>
+          )}
+
+          {/* Seção Onde Ocorre */}
+          <TouchableOpacity
+            style={styles.sectionTitleContainer}
+            onPress={() => setOndeOcorreOpen(!ondeOcorreOpen)}
+          >
+            <Text style={styles.sectionTitle}>Onde ocorre</Text>
+            <Ionicons
+              name={ondeOcorreOpen ? 'chevron-down' : 'chevron-forward'}
+              size={24}
+              color="#006122"
+            />
+          </TouchableOpacity>
+          {ondeOcorreOpen && (
+            <View style={styles.sectionContent}>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Características do solo:</Text>
+                {item.FLORESTA_OMBROFILA_DENSA === 1 ? ' Floresta Ombrófila Densa; ' : ''}
+                {item.FLORESTA_OMBROFILA_ABERTA === 1 ? ' Floresta Ombrófila Aberta; ' : ''}
+                {item.FLORESTA_OMBROFILA_MISTA === 1 ? ' Floresta Ombrófila Mista; ' : ''}
+                {item.FLORESTA_ESTACIONAL_SEMIDECIDUAL === 1 ? ' Floresta Estacional Semi Decidual; ' : ''}
+                {item.FLORESTA_ESTACIONAL_DECIDUAL === 1 ? ' Floresta Estacional Decidual; ' : ''}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Textura:</Text> {item.DESENVOL_MUDA_CAMPO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Drenagem:</Text> {item.TEMPO_MEDIO_PLANTIO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Profundidade:</Text> {item.ALTURA_MEDIA}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Características observadas:</Text> {item.OBSERVACAO_SOLO}
+              </Text>
+            </View>
+          )}
+
+          {/* Seção Características do Solo */}
+          <TouchableOpacity
+            style={styles.sectionTitleContainer}
+            onPress={() => setCaracteristicasSoloOpen(!caracteristicasSoloOpen)}
+          >
+            <Text style={styles.sectionTitle}>Características do Solo</Text>
+            <Ionicons
+              name={caracteristicasSoloOpen ? 'chevron-down' : 'chevron-forward'}
+              size={24}
+              color="#006122"
+            />
+          </TouchableOpacity>
+          {caracteristicasSoloOpen && (
+            <View style={styles.sectionContent}>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Textura</Text>
+                {item.TEXTURA_CASCALHO === 1 ? ' Cascalho; ' : ''}
+                {item.TEXTURA_ARENOSO === 1 ? ' Arenoso; ' : ''}
+                {item.TEXTURA_MEDIO === 1 ? ' Médio; ' : ''}
+                {item.TEXTURA_ARGILOSO === 1 ? ' Argiloso; ' : ''}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Drenagem:</Text>
+                {item.BEM_DRENADO === 1 ? ' Solos bem drenados (não saturados); ' : ''}
+                {item.MAL_DRENADO === 1 ? ' Solos mal drenados; ' : ''}
+                {item.MODERADAMENTE_DRENADO === 1 ? ' Solos moderadamente drenados; ' : ''}
+                {item.SUJEITO_ALAGAMENTO === 1 ? ' Sujeito a alagamentos; ' : ''}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Profundidade do solo:</Text>
+                {item.RASO_ROCHA === 1 ? ' Raso em rochas; ' : ''}
+                {item.RASO_CASCALHO === 1 ? ' Raso em cascalhos; ' : ''}
+                {item.PROFUNDO === 1 ? ' Profundo; ' : ''}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Características observadas:</Text> {item.OBSERVACAO_SOLO}
+              </Text>
+            </View>
+          )}
+
 
           <View style={styles.referencesContainer}>
           <Text style={styles.referencesTitle}>Referências:</Text>
@@ -124,7 +216,7 @@ const DetailsScreen = ({ route }) => {
 
           </View>
 
-
+        
         </View>
       </ScrollView>
     </View>
@@ -134,20 +226,20 @@ const DetailsScreen = ({ route }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'green',
+    backgroundColor: '#006122',
     padding: 0,
   },
   title: {
     fontSize: 28,
     fontWeight: 'bold', // Aplica o estilo negrito
-    color: 'green',
+    color: '#006122',
     marginBottom: 0,
   },
   autor: {
     fontSize: 28,
     fontStyle: 'italic', // Aplica o estilo itálico
     fontWeight: 'bold', // Aplica o estilo negrito
-    color: 'green',
+    color: '#006122',
     marginBottom: 0,
   },
   contentContainer: {
@@ -166,7 +258,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: 'green',
+    color: '#006122',
     marginBottom: 8,
   },
   infoContainer: {
@@ -181,7 +273,7 @@ const styles = StyleSheet.create({
     marginBottom: 4,
     fontSize: 16,
     color: 'white',
-    backgroundColor: 'green',
+    backgroundColor: '#006122',
     paddingVertical: 4,
     paddingHorizontal: 8,
     borderRadius: 8,
@@ -190,7 +282,7 @@ const styles = StyleSheet.create({
   },
   moreInfoContainer: {
     marginBottom: 16,
-    backgroundColor: 'green',
+    backgroundColor: '#006122',
     padding: 16,
     borderRadius: 8,
   },
@@ -224,7 +316,7 @@ const styles = StyleSheet.create({
   referencesTitle: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: 'green', // Cor do título em preto
+    color: '#006122', // Cor do título em preto
     marginBottom: 8,
   },
   referenceBox: {
@@ -241,7 +333,19 @@ const styles = StyleSheet.create({
   linkIconContainer: {
     marginLeft: 8,
   },
-  
+  sectionTitleContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 8,
+  },
+  sectionContent: {
+    paddingLeft: 16,
+    marginBottom: 16,
+    backgroundColor: 'white',
+    padding: 16,
+    borderRadius: 8,
+  },
 });
 
 export default DetailsScreen;

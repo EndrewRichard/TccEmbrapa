@@ -54,7 +54,7 @@ const App = () => {
           <Tab.Navigator
           initialRouteName="Catalogo"
           screenOptions={{
-            tabBarActiveTintColor: 'green',
+            tabBarActiveTintColor: '#006122',
             tabBarStyle: [
               {
                 display: 'flex',

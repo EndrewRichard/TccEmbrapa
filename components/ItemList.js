@@ -15,7 +15,7 @@ const ItemList = ({ item, onItemClick }) => {
       const favorites = await getFavorites();
       setIsFavorite(favorites.includes(item.ESPECIE));
     } catch (error) {
-      console.error('Error loading favorite items from AsyncStorage:', error);
+      console.error('Erro ao carregar os favoritos com AsyncStorage:', error);
     }
   };
 
@@ -24,7 +24,7 @@ const ItemList = ({ item, onItemClick }) => {
       const favoritesString = await AsyncStorage.getItem('@favorites');
       return favoritesString ? JSON.parse(favoritesString) : [];
     } catch (error) {
-      console.error('Error getting favorites from AsyncStorage:', error);
+      console.error('Erro ao buscar os favoritos com AsyncStorage:', error);
       return [];
     }
   };
@@ -34,7 +34,7 @@ const ItemList = ({ item, onItemClick }) => {
       const favoritesString = JSON.stringify(favorites);
       await AsyncStorage.setItem('@favorites', favoritesString);
     } catch (error) {
-      console.error('Error saving favorites to AsyncStorage:', error);
+      console.error('Erro ao salvar os favoritos com AsyncStorage:', error);
     }
   };
 
@@ -78,7 +78,7 @@ const ItemList = ({ item, onItemClick }) => {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: 'green',
+    backgroundColor: '#006122',
     padding: 16,
     marginBottom: 8,
     borderRadius: 20,
@@ -94,13 +94,26 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   commonName: {
-    fontSize: 16,
+    fontSize: 14,
     color: 'white',
   },
   family: {
     fontWeight: 'bold',
     fontSize: 14,
     color: 'white',
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold', // Aplica o estilo negrito
+    color: '#006122',
+    marginBottom: 0,
+  },
+  autor: {
+    fontSize: 28,
+    fontStyle: 'italic', // Aplica o estilo itálico
+    fontWeight: 'bold', // Aplica o estilo negrito
+    color: '#006122',
+    marginBottom: 0,
   },
 });
 

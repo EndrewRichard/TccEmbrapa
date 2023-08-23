@@ -71,6 +71,7 @@ const ListScreen = ({ navigation }) => {
 
   const handleToggleFilterModal = () => {
     setShowFilterModal(!showFilterModal);
+
   };
 
   const handleToggleFilter = (filterKey) => {
@@ -117,9 +118,12 @@ const ListScreen = ({ navigation }) => {
       />
       <FAB
         style={styles.fab}
-        icon={({ color, size }) => <Ionicons name="filter" color={'green'} size={size} />}
-        onPress={handleToggleFilterModal}
-      />
+        icon={({ color, size }) => <Ionicons name="filter" color={'#006122'} size={size} />}
+        onPress={() => {
+          handleToggleFilterModal();
+          clearFilters(); // Chame a função clearFilters aqui
+        }}
+/>
     </View>
   );
 };
@@ -144,7 +148,7 @@ const styles = StyleSheet.create({
   searchInput: {
     height: 50,
     width: '100%',
-    borderColor: 'green',
+    borderColor: '#006122',
     borderWidth: 1,
     paddingHorizontal: 10,
     borderRadius: 20,

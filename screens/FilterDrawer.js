@@ -137,7 +137,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerText}>Filtros</Text>
+        <Text style={styles.headerText}></Text>
         <TouchableOpacity onPress={onClose}>
           <Text style={styles.closeButtonText}>Voltar</Text>
         </TouchableOpacity>
@@ -194,14 +194,14 @@ const styles = StyleSheet.create({
     closeButtonText: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: 'green',
+        color: '#006122',
         textAlign: 'center',
 
     },
     clearFiltersButton: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: 'green',
+        color: '#006122',
         textAlign: 'center',
 
     },
@@ -214,15 +214,15 @@ const styles = StyleSheet.create({
       padding: 0,
       borderRadius: 10,
 
-      borderColor: 'green',
+      borderColor: '#006122',
       
     },
     cardExpanded: {
         borderWidth: 1,
-      borderTopColor: 'green',
+      borderTopColor: '#006122',
     },
     cardTitleContainer: {
-      backgroundColor: 'green',
+      backgroundColor: '#006122',
       borderTopLeftRadius: 8,
       borderTopRightRadius: 8,
     },
