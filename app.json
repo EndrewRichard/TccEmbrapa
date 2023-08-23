@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "restauraApp",
-    "slug": "restauraApp",
-    "version": "1.0.0",
+    "name": "Restaura Mata Atlantica",
+    "slug": "Restaura Mata Atlantica",
+    "version": "2.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon_launcher.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.endrewrichard.restauraApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f3724ab6-536d-45fd-969c-c292e77ea76d"
+      }
     }
   }
 }
