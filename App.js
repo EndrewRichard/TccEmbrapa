@@ -5,7 +5,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons'; 
 import { SafeAreaView, StyleSheet } from 'react-native';
 
-import LoadingScreen from './components/LoadingScreen'; 
 
 import ListScreen from './screens/ListScreen';
 import DetailsScreen from './screens/DetailsScreen';
@@ -25,26 +24,14 @@ const CatalogoStack = ({ filters, updateFilters }) => (
 );
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
+
   const [filters, setFilters] = useState({});
 
-  useEffect(() => {
-    // Simule o carregamento da aplicação por 2 segundos
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
 
-    // Limpa o timer quando o componente é desmontado
-    return () => clearTimeout(timer);
-  }, []);
 
   const handleApplyFilters = (selectedFilters) => {
     setFilters(selectedFilters);
   };
-
-  if (isLoading) {
-    return <LoadingScreen />;
-  }
 
   return (
 
@@ -81,7 +68,7 @@ const App = () => {
               />
             )}
           </Tab.Screen>
-          
+
           <Tab.Screen
             name="Tutorial"
             component={TutorialScreen}
