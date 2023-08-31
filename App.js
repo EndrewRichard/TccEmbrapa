@@ -64,16 +64,7 @@ const App = () => {
       }}
     >
 
-                <Tab.Screen
-            name="Tutorial"
-            component={TutorialScreen}
-            options={{
-              tabBarIcon: ({ color, size }) => (
-                <Ionicons name="bookmarks" color={color} size={size} />
-              ),
-              headerShown: false,
-            }}
-          />
+
           <Tab.Screen
             name="Catalogo"
             options={{
@@ -91,6 +82,16 @@ const App = () => {
             )}
           </Tab.Screen>
           
+          <Tab.Screen
+            name="Tutorial"
+            component={TutorialScreen}
+            options={{
+              tabBarIcon: ({ color, size }) => (
+                <Ionicons name="bookmarks" color={color} size={size} />
+              ),
+              headerShown: false,
+            }}
+          />
     
           <Tab.Screen
             name="Sobre"
