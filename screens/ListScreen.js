@@ -22,7 +22,7 @@ const ListScreen = ({ navigation }) => {
 
     const filteredItems = data.Dado.filter(
       (item) =>
-        (item.ESPECIE && item.ESPECIE.toLowerCase().includes(searchText.toLowerCase())) ||
+        (item.ESPÉCIE && item.ESPÉCIE.toLowerCase().includes(searchText.toLowerCase())) ||
         (item.NOME_VULGAR && item.NOME_VULGAR.toLowerCase().includes(searchText.toLowerCase()))
     );
 
@@ -31,15 +31,15 @@ const ListScreen = ({ navigation }) => {
         Object.entries(selectedFilters).every(([key, value]) => item[key] === (value === true ? 1 : 0))
       );
       filteredByFilters.sort((a, b) => {
-        const isAFavorite = favorites.includes(a.ESPECIE);
-        const isBFavorite = favorites.includes(b.ESPECIE);
+        const isAFavorite = favorites.includes(a.ESPÉCIE);
+        const isBFavorite = favorites.includes(b.ESPÉCIE);
         return isBFavorite - isAFavorite;
       });
       setFilteredData(filteredByFilters);
     } else {
       filteredItems.sort((a, b) => {
-        const isAFavorite = favorites.includes(a.ESPECIE);
-        const isBFavorite = favorites.includes(b.ESPECIE);
+        const isAFavorite = favorites.includes(a.ESPÉCIE);
+        const isBFavorite = favorites.includes(b.ESPÉCIE);
         return isBFavorite - isAFavorite;
       });
       setFilteredData(filteredItems);
@@ -111,7 +111,7 @@ const ListScreen = ({ navigation }) => {
 
       <FlatList
         data={filteredData}
-        keyExtractor={(item) => item.ESPECIE}
+        keyExtractor={(item) => item.ESPÉCIE}
         renderItem={({ item }) => (
           <ItemList item={item} onItemClick={handleItemClick} />
         )}

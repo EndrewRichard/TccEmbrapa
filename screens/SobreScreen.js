@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View, Text, Image, StyleSheet, Linking } from 'react-native'
 
 const SobreScreen = () => {
   // Conteúdo do componente Sobre
@@ -14,8 +14,10 @@ const SobreScreen = () => {
         resizeMode={'contain'}
         source={require('../assets/tecnologia_embrapa.png')}
     />
+            <Text>{'\n'}</Text>
+
     <Text><Text style = {styles.wordBold}>Restaura </Text>
-         é um aplicativo movel que permite recuperar informações sobre espécies nativas da Mata Atlântica. Seu intuito é facilmente ser utilizado.
+         É um aplicativo movel que permite recuperar informações sobre espécies nativas da Mata Atlântica. Seu intuito é facilmente ser utilizado.
          Ele foi concebido e organizado para ser utilizado por leigos ou especialistas em Agropecuaria.
     </Text>
     <Text>{'\n'}
@@ -46,14 +48,14 @@ const SobreScreen = () => {
     <Text 
           style={styles.hyperlinkStyle} 
           onPress={() => { 
-             Linking.openURL('https://www.linkedin.com'); 
+             Linking.openURL('https://www.linkedin.com/in/filipeklinger/'); 
           }}> 
         Filipe Klinger Marques da Lima</Text>
     {'\n'}
     <Text 
           style={styles.hyperlinkStyle} 
           onPress={() => { 
-             Linking.openURL('https://www.linkedin.com'); 
+             Linking.openURL('https://www.linkedin.com/in/gabriel-sc-rizzo/'); 
           }}> 
         Gabriel Santiago Rizzo</Text>
     {'\n'}
@@ -67,7 +69,7 @@ const SobreScreen = () => {
     <Text 
           style={styles.hyperlinkStyle} 
           onPress={() => { 
-             Linking.openURL('https://www.linkedin.com'); 
+             Linking.openURL('https://www.linkedin.com/'); 
           }}> 
         Renan Carvalho Tavora Miranda</Text>
     {'\n'}{'\n'}
@@ -76,7 +78,7 @@ const SobreScreen = () => {
     <Text 
           style={styles.hyperlinkStyle} 
           onPress={() => { 
-             Linking.openURL('https://www.linkedin.com'); 
+             Linking.openURL('https://www.linkedin.com/in/endrewrichard/'); 
           }}> 
         Endrew Richard Moraes Batista Ferreira</Text>
     {'\n'}{'\n'}
@@ -87,9 +89,9 @@ const SobreScreen = () => {
         <Text 
         style={styles.hyperlinkStyle} 
         onPress={() => { 
-            Linking.openURL('https://www.linkedin.com'); 
+            Linking.openURL('http://lattes.cnpq.br/0374432757124562'); 
         }}> 
-        Linkedin   </Text>
+        Lattes   </Text>
         <Text 
         style={styles.hyperlinkStyle} 
         onPress={() => { 
@@ -103,9 +105,9 @@ const SobreScreen = () => {
     <Text 
     style={styles.hyperlinkStyle} 
     onPress={() => { 
-        Linking.openURL('https://www.linkedin.com'); 
+        Linking.openURL('http://lattes.cnpq.br/7618571401128973'); 
     }}> 
-    Linkedin   </Text>
+    Lattes   </Text>
     <Text 
     style={styles.hyperlinkStyle} 
     onPress={() => { 
@@ -118,22 +120,27 @@ const SobreScreen = () => {
         
     </Text>
 
-    <Image 
-        style={{width: '100%', height: 100}}
-        resizeMode={'contain'}
-        source={require('../assets/tecnologia_embrapa.png')}
-    />         
-    
-    <Image 
-        style={{width: '100%', height: 100}}
-        resizeMode={'contain'}
-        source={require('../assets/ic_pet_si.png')}
-    /> 
-    <Image 
-        style={{width: '100%', height: 100}}
-        resizeMode={'contain'}
-        source={require('../assets/ic_ufrrj_color.png')}
-    /> 
+    <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+         <Image 
+            style={{ width: '20%', height: 100, marginRight: '1%' }}
+            resizeMode={'contain'}
+            source={require('../assets/ic_pet_si.png')}
+          /> 
+          <Image 
+            style={{ width: '20%', height: 100, marginRight: '1%' }}
+            resizeMode={'contain'}
+            source={require('../assets/tecnologia_embrapa.png')}
+          />         
+
+          <Image 
+            style={{ width: '20%', height: 100 }}
+            resizeMode={'contain'}
+            source={require('../assets/ic_ufrrj_color.png')}
+          /> 
+        </View>
+            
+
+        <Text>{'\n'}</Text>
     
 
 
@@ -167,7 +174,7 @@ const SobreScreen = () => {
      <Text 
         style={styles.hyperlinkStyle} 
         onPress={() => { 
-            Linking.openURL('www.embrapa.br/agrobiologia'); 
+            Linking.openURL('https://www.embrapa.br/agrobiologia'); 
         }}>  
        www.embrapa.br/agrobiologia   
     </Text> {'\n'}
@@ -175,7 +182,7 @@ const SobreScreen = () => {
     <Text 
         style={styles.hyperlinkStyle} 
         onPress={() => { 
-            Linking.openURL('wwww.embrapa.br/fale-conosco/sac'); 
+            Linking.openURL('https://wwww.embrapa.br/fale-conosco/sac'); 
         }}>  
         wwww.embrapa.br/fale-conosco/sac
           

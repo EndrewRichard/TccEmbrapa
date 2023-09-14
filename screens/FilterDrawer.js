@@ -138,7 +138,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerText}></Text>
-        <TouchableOpacity onPress={onClose}>
+        <TouchableOpacity onPress={onClose} style={styles.backButtonContainer}>
           <Text style={styles.closeButtonText}>Voltar</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={handleClearFilters}>
@@ -183,6 +183,11 @@ const styles = StyleSheet.create({
       padding: 16,
       backgroundColor: 'white',
     },
+    
+    backButtonContainer: {
+      position: 'absolute',
+      left: 16, // Ajuste conforme necessário
+    },
 
     header: {
       flexDirection: 'row',
@@ -196,6 +201,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#006122',
         textAlign: 'center',
+      
 
     },
     clearFiltersButton: {

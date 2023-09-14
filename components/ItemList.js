@@ -13,7 +13,7 @@ const ItemList = ({ item, onItemClick }) => {
   const checkIsFavorite = async () => {
     try {
       const favorites = await getFavorites();
-      setIsFavorite(favorites.includes(item.ESPECIE));
+      setIsFavorite(favorites.includes(item.ESPÉCIE));
     } catch (error) {
       console.error('Erro ao carregar os favoritos com AsyncStorage:', error);
     }
@@ -46,11 +46,11 @@ const ItemList = ({ item, onItemClick }) => {
     try {
       const favorites = await getFavorites();
       if (isFavorite) {
-        const newFavorites = favorites.filter((ESPECIE) => ESPECIE !== item.ESPECIE);
+        const newFavorites = favorites.filter((ESPÉCIE) => ESPÉCIE !== item.ESPÉCIE);
         setIsFavorite(false);
         saveFavorites(newFavorites);
       } else {
-        const newFavorites = [...favorites, item.ESPECIE];
+        const newFavorites = [...favorites, item.ESPÉCIE];
         setIsFavorite(true);
         saveFavorites(newFavorites);
       }
@@ -62,7 +62,7 @@ const ItemList = ({ item, onItemClick }) => {
   return (
     <TouchableOpacity style={styles.card} onPress={handleItemClick}>
       <View style={styles.content}>
-        <Text style={styles.species}>{item.ESPECIE}</Text>
+        <Text style={styles.species}>{item.ESPÉCIE}</Text>
         <Ionicons
           name={isFavorite ? 'heart' : 'heart-outline'}
           size={24}

@@ -54,7 +54,7 @@ const DetailsScreen = ({ route }) => {
       <ScrollView>
         <View style={styles.contentContainer}>
           <View style={styles.titleContainer}>
-            <Text style={styles.title}>{item.ESPECIE}</Text>
+            <Text style={styles.title}>{item.ESPÉCIE}</Text>
 
             {item.LINK && (
               <TouchableOpacity style={styles.linkIconContainer} onPress={() => handleOpenURL(item.LINK)}>
@@ -208,10 +208,11 @@ const DetailsScreen = ({ route }) => {
 
           <View style={styles.referencesContainer}>
           <Text style={styles.referencesTitle}>Referências:</Text>
-          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text> {item.REFERENCIA1}</Text>
-          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text> {item.REFERENCIA2}</Text>
-          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text> {item.REFERENCIA3}</Text>
-          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text> {item.REFERENCIA4}</Text>
+          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA}</Text>
+          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA1}</Text>
+          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA2}</Text>
+          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA3}</Text>
+          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA4}</Text>
 
 
           </View>
