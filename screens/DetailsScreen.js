@@ -46,6 +46,9 @@ const DetailsScreen = ({ route }) => {
   const [mudasSementesOpen, setMudasSementesOpen] = useState(false);
   const [ondeOcorreOpen, setOndeOcorreOpen] = useState(false);
   const [caracteristicasSoloOpen, setCaracteristicasSoloOpen] = useState(false);
+  const [relacaoAmbienteOpen, setRelacaoAmbienteOpen] = useState(false);
+  const [ciclosOpen, setCiclosOpen] = useState(false);
+  
 
   
 
@@ -114,17 +117,65 @@ const DetailsScreen = ({ route }) => {
           {mudasSementesOpen && (
             <View style={styles.sectionContent}>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Desenvolvimento da muda:</Text> {item.DESENVOL_MUDA_CAMPO}
+                <Text style={styles.attributeNameBlack}>Crescimento:</Text> {item.DESENVOL_MUDA_CAMPO}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Tempo médio plantio:</Text> {item.TEMPO_MEDIO_PLANTIO}
+                <Text style={styles.attributeNameBlack}>Desenvolvimento da muda (2 anos):</Text>
+                {item.LENTO === 1 ? ' Lento; ' : ''}
+                {item.RAPIDO === 1 ? ' Rapido; ' : ''}
+                {item.MUITO_RAPIDO === 1 ? ' Muito rapido; ' : ''}
+
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Altura média:</Text> {item.ALTURA_MEDIA}
+                <Text style={styles.attributeNameBlack}>Coleta e processamento:</Text> {item.COLETA_PROCESSAMENTO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Tempo médio para o plantio:</Text> {item.TEMPO_MEDIO_PLANTIO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Altura média para ir ao campo:</Text> {item.ALTURA_MEDIA}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
                 <Text style={styles.attributeNameBlack}>Forma Biológica:</Text> {item.FORMA_BIOLOGICA}
               </Text>
+
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Sementes/kg:</Text> {item.SEMENTE_P_KG}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Peso fresco/1000 sementes (g):</Text> {item.PESO_FRESCO}
+              </Text>
+
+              
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameGreen}>{'\n'}CONDIÇÕES DE ARMAZENAMENTO</Text> 
+              </Text>
+
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Caracteristicas observadas:</Text> {item.CONDICOES_ARMAZENAMENTO}
+              </Text>
+
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Prazo para armazenamento:</Text> {item.PRAZO_ARMAZENAMENTO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Tolerancia a dessecação:</Text> {item.TOL_DESSECACAO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Tolerancia ao frio:</Text> {item.TOL_FRIO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Tipo dormência:</Text> {item.TIPO_DORMENCIA}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Tratamento para germinação:</Text> {item.TRAT_GERMINACAO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Padronização:</Text> {item.PADRONIZACAO}
+              </Text>
+
+
+              
             </View>
           )}
 
@@ -143,7 +194,7 @@ const DetailsScreen = ({ route }) => {
           {ondeOcorreOpen && (
             <View style={styles.sectionContent}>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Características do solo:</Text>
+                <Text style={styles.attributeNameBlack}>Região Fitoecologica:</Text>
                 {item.FLORESTA_OMBROFILA_DENSA === 1 ? ' Floresta Ombrófila Densa; ' : ''}
                 {item.FLORESTA_OMBROFILA_ABERTA === 1 ? ' Floresta Ombrófila Aberta; ' : ''}
                 {item.FLORESTA_OMBROFILA_MISTA === 1 ? ' Floresta Ombrófila Mista; ' : ''}
@@ -151,16 +202,32 @@ const DetailsScreen = ({ route }) => {
                 {item.FLORESTA_ESTACIONAL_DECIDUAL === 1 ? ' Floresta Estacional Decidual; ' : ''}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Textura:</Text> {item.DESENVOL_MUDA_CAMPO}
+                <Text style={styles.attributeNameBlack}>Sistema Edafico de primeira ocupação:</Text> 
+                {item.SISTEMA_EDAFICO_PRIMEIRA_OCUPACAO === 1 ? ' Sim; ' : 'Não'}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Drenagem:</Text> {item.TEMPO_MEDIO_PLANTIO}
+                <Text style={styles.attributeNameBlack}>Influencia marinha:</Text> 
+                {item.VEGETACAO_INFLUENCIA_MARINHA === 1 ? ' Sim; ' : 'Não'}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Profundidade:</Text> {item.ALTURA_MEDIA}
+                <Text style={styles.attributeNameBlack}>Influencia fluviomarinha:</Text> 
+                {item.VEGETACAO_INFLUENCIA_FLUVIOMARINHA === 1 ? ' Sim; ' : 'Não'}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Características observadas:</Text> {item.OBSERVACAO_SOLO}
+                <Text style={styles.attributeNameBlack}>Influencia fluvial:</Text> 
+                {item.VEGETACAO_INFLUENCIA_FLUVIAL === 1 ? ' Sim; ' : 'Não'}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Campos rupestres:</Text> 
+                {item.CAMPOS_RUPESTRES === 1 ? ' Sim; ' : 'Não'}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Sistemas de áreas sem vegetação:</Text> 
+                {item.SASV === 1 ? ' Sim; ' : 'Não'}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Areas antropizadas:</Text> 
+                {item.AREAS_ANTROPIZADAS === 1 ? ' Sim; ' : 'Não'}
               </Text>
             </View>
           )}
@@ -203,7 +270,73 @@ const DetailsScreen = ({ route }) => {
                 <Text style={styles.attributeNameBlack}>Características observadas:</Text> {item.OBSERVACAO_SOLO}
               </Text>
             </View>
+          )} 
+            {/* // Seção Relação com Ambiente */}
+          <TouchableOpacity
+            style={styles.sectionTitleContainer}
+            onPress={() => setRelacaoAmbienteOpen(!relacaoAmbienteOpen)}
+          >
+            <Text style={styles.sectionTitle}>Relação com o Ambiente</Text>
+            <Ionicons
+              name={relacaoAmbienteOpen ? 'chevron-down' : 'chevron-forward'}
+              size={24}
+              color="#006122"
+            />
+          </TouchableOpacity>
+          {relacaoAmbienteOpen && (
+            <View style={styles.sectionContent}>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Tolerancia a sombra:</Text> {item.TOL_SOMBRA}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Ocupação na área plantada:</Text> {item.ESTRATEGIA_OCUPACAO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Persisténcia da folhagem:</Text> {item.PERSISTENCIA_FOLHAGEM}
+              </Text>
+
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameGreen}>{'\n'}ATRAÇÃO DA FAUNA</Text> 
+              </Text>
+
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Animal Atraido:</Text> {item.ANIMAL_ATRAIDO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Tipo de interação:</Text> {item.TIPO_INTERACAO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Estratégia de dispersão:</Text> {item.ESTRATEGIA_DISPERSAO}
+              </Text>
+            
+            </View>
           )}
+
+            {/* // Seção Relação ciclos  */}
+        <TouchableOpacity
+          style={styles.sectionTitleContainer}
+          onPress={() => setCiclosOpen(!ciclosOpen)}
+        >
+          <Text style={styles.sectionTitle}>Ciclos</Text>
+          <Ionicons
+            name={ciclosOpen ? 'chevron-down' : 'chevron-forward'}
+            size={24}
+            color="#006122"
+          />
+        </TouchableOpacity>
+        {ciclosOpen && (
+          <View style={styles.sectionContent}>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Periodo de floração:</Text> {item.PERIODO_FLORACAO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Periodo de frutificação:</Text> {item.PERIODO_FRUTIFICACAO}
+              </Text>
+              <Text style={styles.moreInfoTextBlack}>
+                <Text style={styles.attributeNameBlack}>Periodo de coleta de sementes no campo:</Text> {item.PERIODO_COLETA_SEMENTE}
+              </Text>
+                </View>
+        )}
 
 
           <View style={styles.referencesContainer}>
@@ -310,6 +443,10 @@ const styles = StyleSheet.create({
   attributeNameBlack: {
     fontWeight: 'bold',
     color: 'black',
+  },
+  attributeNameGreen: {
+    fontWeight: 'bold',
+    color: '#006122',
   },
   referencesContainer: {
     marginBottom: 16,
