@@ -1,9 +1,23 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
+  ActivityIndicator,
+  Linking, // Adicionado para importar o módulo Linking
+} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import * as FileSystem from 'expo-file-system';
+
 
 const DetailsScreen = ({ route }) => {
   const { item } = route.params;
+  const [downloadStatus, setDownloadStatus] = useState(null);
+
+  
+
 
   // Função para filtrar os estados que contêm valor 1 no JSON
   const filterStates = (data) => {
@@ -28,11 +42,43 @@ const DetailsScreen = ({ route }) => {
   };
 
 
-  // Função para abrir o link em um navegador externo ou WebView (a ser implementada)
-  const handleOpenURL = (url) => {
-    // Implemente a lógica aqui para abrir o link externamente
-    console.log('Abrir URL:', url);
+  // Função para abrir o link em um navegador externo ou WebView (a ser implementada) (atualmente baixando pdf)
+  const handleOpenURL = async (url) => {
+    const fileName = url.split('/').pop();
+    const localUri = FileSystem.documentDirectory + fileName;
+  
+    try {
+      const info = await FileSystem.getInfoAsync(localUri);
+  
+      if (info.exists) {
+        const fileUri = localUri;
+        await Linking.openURL(fileUri); // Abre o link no navegador
+        console.log('Arquivo aberto no navegador:', fileUri);
+      } else {
+        console.error('Arquivo não encontrado:', localUri);
+  
+        setDownloadStatus('Fazendo download...');
+  
+        const downloadResumable = FileSystem.createDownloadResumable(url, localUri);
+  
+        try {
+          const { uri } = await downloadResumable.downloadAsync();
+          console.log('Arquivo baixado com sucesso:', uri);
+  
+          setDownloadStatus(null);
+        } catch (e) {
+          console.error('Erro ao baixar o arquivo:', e);
+          setDownloadStatus('Erro ao fazer download');
+          setTimeout(() => setDownloadStatus(null), 3000);
+        }
+      }
+    } catch (e) {
+      console.error('Erro ao verificar o arquivo:', e);
+      setDownloadStatus('Erro ao verificar o arquivo');
+      setTimeout(() => setDownloadStatus(null), 3000);
+    }
   };
+  
 
   // Função para renderizar os ícones dos usos econômicos
   const renderUsageIcon = (usage) => {
@@ -60,10 +106,20 @@ const DetailsScreen = ({ route }) => {
             <Text style={styles.title}>{item.ESPÉCIE}</Text>
 
             {item.LINK && (
-              <TouchableOpacity style={styles.linkIconContainer} onPress={() => handleOpenURL(item.LINK)}>
-                <Ionicons name="globe" size={24} color="#002B7F" />
+            <View>
+              <TouchableOpacity onPress={() => handleOpenURL(item.LINK)}>
+                {downloadStatus ? (
+                  downloadStatus === 'Fazendo download...' ? (
+                    <ActivityIndicator size="small" color="#00FF00" />
+                  ) : (
+                    <Ionicons name="arrow-down-circle" size={30} color="#006122" />
+                  )
+                ) : (
+                  <Ionicons name="arrow-down-circle" size={30} color="#006122" />
+                )}
               </TouchableOpacity>
-            )}
+            </View>
+          )}
 
           </View>
           <Text style={styles.autor}>{item.AUTOR}{'\n'}</Text>
