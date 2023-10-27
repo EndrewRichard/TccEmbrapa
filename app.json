@@ -25,7 +25,8 @@
         "foregroundImage": "./assets/icon1024.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.endrewrichard.restauraApp"
+      "package": "com.endrewrichard.restauraApp",
+      "versionCode": 2.1
     },
     "web": {
       "favicon": "./assets/icon1024.png"
