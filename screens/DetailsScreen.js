@@ -1,9 +1,24 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
+  ActivityIndicator,
+  Linking,
+
+} from 'react-native';
+
 import { Ionicons } from '@expo/vector-icons';
 
-const DetailsScreen = ({ route }) => {
+const DetailsScreen = ({ route, navigation }) => {
   const { item } = route.params;
+  const [downloadStatus, setDownloadStatus] = useState(null);
+
+  
+
 
   // Função para filtrar os estados que contêm valor 1 no JSON
   const filterStates = (data) => {
@@ -28,10 +43,15 @@ const DetailsScreen = ({ route }) => {
   };
 
 
-  // Função para abrir o link em um navegador externo ou WebView (a ser implementada)
+  // Função para abrir o link em um navegador externo ou WebView (a ser implementada) (atualmente baixando pdf)
   const handleOpenURL = (url) => {
-    // Implemente a lógica aqui para abrir o link externamente
-    console.log('Abrir URL:', url);
+    Linking.openURL(url)
+      .then(() => {
+        console.log('Link aberto no navegador:', url);
+      })
+      .catch((error) => {
+        console.error('Erro ao abrir o link:', error);
+      });
   };
 
   // Função para renderizar os ícones dos usos econômicos
@@ -55,15 +75,31 @@ const DetailsScreen = ({ route }) => {
   return (
     <View style={styles.container}>
       <ScrollView>
+      <TouchableOpacity
+          style={styles.goBackContainer}
+          onPress={() => navigation.goBack()}
+        >
+          <Ionicons name="arrow-back" size={30} color="white" />
+      </TouchableOpacity>
         <View style={styles.contentContainer}>
           <View style={styles.titleContainer}>
             <Text style={styles.title}>{item.ESPÉCIE}</Text>
 
             {item.LINK && (
-              <TouchableOpacity style={styles.linkIconContainer} onPress={() => handleOpenURL(item.LINK)}>
-                <Ionicons name="globe" size={24} color="#002B7F" />
+            <View>
+              <TouchableOpacity onPress={() => handleOpenURL(item.LINK)}>
+                {downloadStatus ? (
+                  downloadStatus === 'Fazendo download...' ? (
+                    <ActivityIndicator size="small" color="#00FF00" />
+                  ) : (
+                    <Ionicons name="arrow-down-circle" size={30} color="#006122" />
+                  )
+                ) : (
+                  <Ionicons name="arrow-down-circle" size={30} color="#006122" />
+                )}
               </TouchableOpacity>
-            )}
+            </View>
+          )}
 
           </View>
           <Text style={styles.autor}>{item.AUTOR}{'\n'}</Text>
@@ -365,14 +401,14 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    fontWeight: 'bold', // Aplica o estilo negrito
+    fontStyle: 'italic', // Aplica o estilo italico
     color: '#006122',
     marginBottom: 0,
   },
   autor: {
     fontSize: 28,
-    fontStyle: 'italic', // Aplica o estilo itálico
-    fontWeight: 'bold', // Aplica o estilo negrito
+    //fontStyle: '', // Aplica o estilo itálico
+    //fontWeight: '', // Aplica o estilo negrito
     color: '#006122',
     marginBottom: 0,
   },
@@ -484,6 +520,15 @@ const styles = StyleSheet.create({
     padding: 16,
     borderRadius: 8,
   },
+  
+  goBackContainer: {
+    position: 'absolute',
+    top: 16,
+    left: 16,
+    zIndex: 1, // Para garantir que o ícone fique acima do conteúdo
+  },
+
+
 });
 
 export default DetailsScreen;

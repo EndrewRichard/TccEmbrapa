@@ -156,10 +156,31 @@ const SobreScreen = () => {
     Chefe Adjunta de Transferencia de Tecnologia{'\n'}{'\n'}
 
     <Text style = {styles.wordBold}>Joyce Aparecida Marques{'\n'} </Text> 
-    Chefe Adjunta de Administração{'\n'}{'\n'}
-    </Text>
+    Chefe Adjunta de Administração{'\n'}{'\n'}{'\n'}{'\n'}
 
-    <Text>Embrapa Agrobiologia - BR 465, km7, Seropédica, RJ {'\n'}
+     </Text>
+
+    <View style={styles.moreInfoContainer}><Text style = {{textAlignVertical: 'center', textAlign: "center", color: "white"}}>
+        
+    Se você, usuário deste aplicativo, dispuser de alguma informação sobre as espécies
+    que queira compartilhar para enriquecer nossa lista, envie uma mensagem para:{'\n'}</Text>
+    <Text style = {{...styles.wordBold, textAlignVertical: 'center', textAlign: "center", color: "white"}}onPress={() => { 
+            Linking.openURL('mailto:cnpab.restaura@embrapa.br'); 
+        }}> cnpab.restaura@embrapa.br{'\n'} </Text> 
+     <Text style = {{textAlignVertical: 'center', textAlign: "center", color: "white"}}>   
+    O Restaura Mata Atlântica é um produto de 
+    construção contínua e coletiva. 
+
+    Gratos.
+    </Text>
+    </View>
+
+
+
+
+   
+
+    <Text>{'\n'}{'\n'}Embrapa Agrobiologia - BR 465, km7, Seropédica, RJ {'\n'}
     Tel:
     <Text 
         style={styles.hyperlinkStyle} 
@@ -187,9 +208,11 @@ const SobreScreen = () => {
         wwww.embrapa.br/fale-conosco/sac
           
     </Text>
-        {'\n'}{'\n'}{'\n'}
 
-     </Text> 
+    {'\n'}{'\n'}{'\n'}
+    </Text>
+
+
 
 
 
@@ -227,6 +250,12 @@ export const styles = StyleSheet.create ({
       marginTop: 100,
       padding: 20
    },
+   moreInfoContainer: {
+    marginBottom: 16,
+    backgroundColor: '#006122',
+    padding: 16,
+    borderRadius: 8,
+  },
    text: {
       color: '#41cdf4',
    },

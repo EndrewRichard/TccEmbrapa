@@ -6,10 +6,13 @@ import { Ionicons } from '@expo/vector-icons';
 import { SafeAreaView, StyleSheet } from 'react-native';
 
 
+
 import ListScreen from './screens/ListScreen';
 import DetailsScreen from './screens/DetailsScreen';
 import TutorialScreen from './screens/TutorialScreen';
 import AboutScreen from './screens/SobreScreen';
+
+
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -20,6 +23,7 @@ const CatalogoStack = ({ filters, updateFilters }) => (
       {(props) => <ListScreen {...props} filters={filters} />}
     </Stack.Screen>
     <Stack.Screen name="Details" component={DetailsScreen} />
+
   </Stack.Navigator>
 );
 

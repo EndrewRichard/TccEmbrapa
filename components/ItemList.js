@@ -73,6 +73,9 @@ const ItemList = ({ item, onItemClick }) => {
       <Text style={styles.commonName}><Text style={styles.family}>Nome popular: </Text>{item.NOME_VULGAR}</Text>
       <Text style={styles.commonName}><Text style={styles.family}>Família: </Text>{item.FAMILIA}</Text>
     </TouchableOpacity>
+
+
+
   );
 };
 

@@ -89,7 +89,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
         { title: 'Tipos de Vegetação', filters: filters.slice(6, 9) },
         { title: 'Textura', filters: filters.slice(12, 16) },
         { title: 'Fertilidade', filters: filters.slice(16, 18) },
-        { title: 'Dreno', filters: filters.slice(18, 22) },
+        { title: 'Drenagem', filters: filters.slice(18, 22) },
         { title: 'Solo', filters: filters.slice(22, 25) },
         { title: 'Estados', filters: filters.slice(25, 52) },
         { title: 'Velocidade Crescimento', filters: filters.slice(52, 55) },

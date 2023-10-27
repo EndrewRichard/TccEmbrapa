@@ -2,7 +2,7 @@
   "expo": {
     "name": "Restaura Mata Atlantica",
     "slug": "restauraApp",
-    "version": "2.0.0", 
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon1024.png",
     "userInterfaceStyle": "light",
@@ -19,11 +19,12 @@
     },
     "android": {
       "adaptiveIcon": {
+        "permissions": ["WRITE_EXTERNAL_STORAGE", "READ_EXTERNAL_STORAGE"],
         "foregroundImage": "./assets/icon1024.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.endrewrichard.restauraApp",
-      "versionCode": 2 
+      "versionCode": 3 
     },
     "web": {
       "favicon": "./assets/icon1024.png"
@@ -32,6 +33,12 @@
       "eas": {
         "projectId": "f3724ab6-536d-45fd-969c-c292e77ea76d"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f3724ab6-536d-45fd-969c-c292e77ea76d"
     }
   }
 }
