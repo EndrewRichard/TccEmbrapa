@@ -44,41 +44,9 @@ const DetailsScreen = ({ route }) => {
 
   // Função para abrir o link em um navegador externo ou WebView (a ser implementada) (atualmente baixando pdf)
   const handleOpenURL = async (url) => {
-    const fileName = url.split('/').pop();
-    const localUri = FileSystem.documentDirectory + fileName;
-  
-    try {
-      const info = await FileSystem.getInfoAsync(localUri);
-  
-      if (info.exists) {
-        const fileUri = localUri;
-        await Linking.openURL(fileUri); // Abre o link no navegador
-        console.log('Arquivo aberto no navegador:', fileUri);
-      } else {
-        console.error('Arquivo não encontrado:', localUri);
-  
-        setDownloadStatus('Fazendo download...');
-  
-        const downloadResumable = FileSystem.createDownloadResumable(url, localUri);
-  
-        try {
-          const { uri } = await downloadResumable.downloadAsync();
-          console.log('Arquivo baixado com sucesso:', uri);
-  
-          setDownloadStatus(null);
-        } catch (e) {
-          console.error('Erro ao baixar o arquivo:', e);
-          setDownloadStatus('Erro ao fazer download');
-          setTimeout(() => setDownloadStatus(null), 3000);
-        }
-      }
-    } catch (e) {
-      console.error('Erro ao verificar o arquivo:', e);
-      setDownloadStatus('Erro ao verificar o arquivo');
-      setTimeout(() => setDownloadStatus(null), 3000);
-    }
+    await Linking.openURL(url);
+    console.log('Link aberto no navegador:', url);
   };
-  
 
   // Função para renderizar os ícones dos usos econômicos
   const renderUsageIcon = (usage) => {
