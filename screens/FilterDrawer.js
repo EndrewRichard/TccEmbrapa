@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 
-
-
-
 const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }) => {
+
+
+
+
   const filters = [
     { key: "FLORESTA_OMBROFILA_DENSA", label: "Floresta Ombrófila Densa" },
     { key: "FLORESTA_OMBROFILA_ABERTA", label: "Floresta Ombrófila Aberta" },
@@ -108,40 +109,38 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
    // Estado para controlar os filtros marcados em cada grupo
    const [expandedGroupIndex, setExpandedGroupIndex] = useState(null);
    const [selectedGroupFilters, setSelectedGroupFilters] = useState({});
-   const [selectedToleranciaSombra, setSelectedToleranciaSombra] = useState(null);
-   const [selectedEstrategiaOcupacao, setSelectedEstrategiaOcupacao] = useState(null);
-   const [selectedDispersaoFrutos, setSelectedDispersaoFrutos] = useState(null);
+   const [tolSombraValue, setTolSombraValue] = useState(selectedFilters['TOL_SOMBRA'] || null);
+   const [OcupValue, setOcupValue] = useState(selectedFilters['ESTRATEGIA_OCUPACAO'] || null);
+   const [DispValue, setDispValue] = useState(selectedFilters['ESTRATEGIA_DISPERSAO'] || null);
+   
+
+
+
+   const handleSelectSombra = () => {
+    setTolSombraValue('');
+    onToggleFilter('TOL_SOMBRA', '');
+  };
+  
+  
+  const handleSelectOcupacao = () => {
+    setOcupValue('');
+    onToggleFilter('ESTRATEGIA_OCUPACAO', '');
+  };
+  
+  
+  const handleSelectDispersao = () => {
+    setDispValue('');
+    onToggleFilter('ESTRATEGIA_DISPERSAO', '');
+  };
+  console.log('Filtros Selecionados:', selectedFilters);
+
+
  
    // Função para tratar a marcação/desmarcação de filtros em cada grupo
-   const handleToggleFilterGroup = (groupIndex, filterKey) => {
-     const newSelectedGroupFilters = { ...selectedGroupFilters };
+   const handleToggleFilterGroup = (groupIndex, filterKey, value) => {
+    const newSelectedGroupFilters = { ...selectedGroupFilters };
+  
 
-     //filtros do select
-
-     if (filterKey === 'TOL_SOMBRA' || filterKey === 'ESTRATEGIA_OCUPACAO' || filterKey === 'ESTRATEGIA_DISPERSAO') {
-      const currentFilters = newSelectedGroupFilters[groupIndex] || '';
-  
-      // Verificar se a palavra-chave está presente
-      const isKeywordPresent = currentFilters
-        .toLowerCase()
-        .split(', ')
-        .some((f) => f === filterKey.toLowerCase());
-  
-      if (isKeywordPresent) {
-        newSelectedGroupFilters[groupIndex] = currentFilters
-          .split(', ')
-          .filter((f) => f.toLowerCase() !== filterKey.toLowerCase())
-          .join(', ');
-  
-        onToggleFilter(filterKey, false);
-      } else {
-        const updatedFilters = currentFilters ? `${currentFilters}, ${filterKey}` : filterKey;
-        newSelectedGroupFilters[groupIndex] = updatedFilters;
-        onToggleFilter(filterKey, true);
-      }
-      setSelectedGroupFilters(newSelectedGroupFilters);
-      return;
-    }
  
      // Se o filtro atual já estava selecionado, desmarca-o
      if (newSelectedGroupFilters[groupIndex] === filterKey) {
@@ -208,80 +207,49 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
               ))}
             </View>
           )}
+              {groupIndex === 5 && expandedGroupIndex === groupIndex && (
+                <View style={styles.ecologicas}><Text>{'\n'}{'\n'}</Text>
+                  <TouchableOpacity onPress={handleSelectSombra}>
+                    <View style={styles.filterRow}>
+                      <Text style={styles.filterLabel}>Tolerancia a sombra:      </Text>
+                      <Text style={styles.selectedFilter}>
+                        {selectedFilters['TOL_SOMBRA'] || 'Selecione uma opção'}
+                      </Text>
+                    </View>
+                  </TouchableOpacity>
+                </View>
+              )}
 
+              {groupIndex === 5 && expandedGroupIndex === groupIndex && (
+                <View style={styles.ecologicas}><Text>{'\n'}{'\n'}</Text>
+                  <TouchableOpacity onPress={handleSelectOcupacao}>
+                    <View style={styles.filterRow}>
+                      <Text style={styles.filterLabel}>Estratégia de Ocupação:</Text>
+                      <Text style={styles.selectedFilter}>
+                        {selectedFilters['ESTRATEGIA_OCUPACAO'] || 'Selecione uma opção'}
+                      </Text>
+                    </View>
+                  </TouchableOpacity>
+                </View>
+              )}
 
-{groupIndex === 5 && expandedGroupIndex === groupIndex && (
-  <View style={styles.cardContent}>
-          <Text style={styles.filterLabel}>Tolerância à Sombra</Text>
-          <View style={styles.filterItem}>
-          <View style={styles.ecologicas}>
-            <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'TOL_SOMBRA')} style={styles.checkboxContainer}>
-              <View style={styles.checkbox}>
-                {selectedToleranciaSombra === 'sim' ? <Text style={styles.checkmark}>✓</Text> : null}
-              </View>
-              <Text>Sim</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'TOL_SOMBRA')} style={styles.checkboxContainer}>
-              <View style={styles.checkbox}>
-                {selectedToleranciaSombra === 'nao' ? <Text style={styles.checkmark}>✓</Text> : null}
-              </View>
-              <Text>Não</Text>
-            </TouchableOpacity>
+              {groupIndex === 5 && expandedGroupIndex === groupIndex && (
+                <View style={styles.ecologicas}><Text>{'\n'}</Text>
+                  <TouchableOpacity onPress={handleSelectDispersao}>
+                    <View style={styles.filterRow}>
+                      <Text style={styles.filterLabel}>Estratégia de Disperção: </Text>
+                      <Text style={styles.selectedFilter}>
+                        {selectedFilters['ESTRATEGIA_DISPERSAO'] || 'Selecione uma opção'}
+                      </Text>
+                    </View>
+                  </TouchableOpacity>
+                </View>
+              )}
           </View>
-
-    </View>
-    <Text style={styles.filterLabel}>Estratégia de Ocupação</Text>
-
-    <View style={styles.filterItem}>
-      <View style={styles.ecologicas }>
-              <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'ESTRATEGIA_OCUPACAO')}>
-        <Text>Diversidade    </Text>
-        <View style={styles.checkbox}>
-          {selectedEstrategiaOcupacao === 'diversidade' ? <Text style={styles.checkmark}>✓</Text> : null}
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'ESTRATEGIA_OCUPACAO')}>
-        <Text>Recobrimento   </Text>
-        <View style={styles.checkbox}>
-          {selectedEstrategiaOcupacao === 'recobrimento' ? <Text style={styles.checkmark}>✓</Text> : null}
-        </View>
-      </TouchableOpacity>
-      </View>
-    </View>
-    <Text style={styles.filterLabel}>Dispersão de Frutos</Text>
-    <View style={styles.filterItem}>
-
-      <View style={styles.ecologicas }>
-      <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'ESTRATEGIA_DISPERSAO')}>
-        <Text>Anemocórica   </Text>
-        <View style={styles.checkbox}>
-          {selectedDispersaoFrutos === 'anemocorica' ? <Text style={styles.checkmark}>✓</Text> : null}
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'ESTRATEGIA_DISPERSAO')}>
-        <Text>Zoocórica   </Text>
-        <View style={styles.checkbox}>
-          {selectedDispersaoFrutos === 'zoocorica' ? <Text style={styles.checkmark}>✓</Text> : null}
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'ESTRATEGIA_DISPERSAO')}>
-        <Text>Autocórica   </Text>
-        <View style={styles.checkbox}>
-          {selectedDispersaoFrutos === 'autocorica' ? <Text style={styles.checkmark}>✓</Text> : null}
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'ESTRATEGIA_DISPERSAO')}>
-        <Text>Hidrocórica</Text>
-        <View style={styles.checkbox}>
-          {selectedDispersaoFrutos === 'hidrocórica' ? <Text style={styles.checkmark}>✓</Text> : null}
-        </View>
-      </TouchableOpacity>
-      </View>
-    </View>
-  </View>
-)}
-        </View>
+              
+        
       ))}
+
     </View>
   );
 }
@@ -293,6 +261,15 @@ const styles = StyleSheet.create({
       padding: 16,
       backgroundColor: 'white',
     },
+    selectedFilter: {
+      marginLeft: 10, // Ajuste conforme necessário
+    },
+    filterRow: {
+      flexDirection: 'row',
+      
+      justifyContent: 'space-between',
+      alignItems: 'center',
+    },
     
     backButtonContainer: {
 
@@ -301,7 +278,7 @@ const styles = StyleSheet.create({
     },
     ecologicas: {
       flexDirection: 'row',
-      marginLef: 16,
+      marginLeft: 16,
 
     },
 
@@ -378,6 +355,8 @@ const styles = StyleSheet.create({
     },
     filterLabel: {
       fontSize: 16,
+      fontWeight: 'bold',
+
     },
     checkbox: {
       width: 24,
