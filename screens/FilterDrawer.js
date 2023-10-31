@@ -215,19 +215,20 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
           <Text style={styles.filterLabel}>Tolerância à Sombra</Text>
           <View style={styles.filterItem}>
           <View style={styles.ecologicas}>
-            <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'TOL_SOMBRA')} style={styles.checkboxContainer}>
-              <View style={styles.checkbox}>
-                {selectedToleranciaSombra === 'sim' ? <Text style={styles.checkmark}>✓</Text> : null}
-              </View>
-              <Text>Sim</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'TOL_SOMBRA')} style={styles.checkboxContainer}>
-              <View style={styles.checkbox}>
-                {selectedToleranciaSombra === 'nao' ? <Text style={styles.checkmark}>✓</Text> : null}
-              </View>
-              <Text>Não</Text>
-            </TouchableOpacity>
-          </View>
+          <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'TOL_SOMBRA')} style={styles.checkboxContainer}>
+            <View style={styles.checkbox}>
+              {selectedToleranciaSombra ? <Text style={styles.checkmark}>✓</Text> : null}
+            </View>
+            <Text>Sim   </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'TOL_SOMBRA')} style={styles.checkboxContainer}>
+            <View style={styles.checkbox}>
+              {selectedToleranciaSombra === false ? <Text style={styles.checkmark}>✓</Text> : null}
+            </View>
+            <Text>Não   </Text>
+          </TouchableOpacity>
+        </View>
+
 
     </View>
     <Text style={styles.filterLabel}>Estratégia de Ocupação</Text>
@@ -235,19 +236,18 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
     <View style={styles.filterItem}>
       <View style={styles.ecologicas }>
               <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'ESTRATEGIA_OCUPACAO')}>
-        <Text>Diversidade    </Text>
-        <View style={styles.checkbox}>
-          {selectedEstrategiaOcupacao === 'diversidade' ? <Text style={styles.checkmark}>✓</Text> : null}
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'ESTRATEGIA_OCUPACAO')}>
-        <Text>Recobrimento   </Text>
-        <View style={styles.checkbox}>
-          {selectedEstrategiaOcupacao === 'recobrimento' ? <Text style={styles.checkmark}>✓</Text> : null}
-        </View>
-      </TouchableOpacity>
-      </View>
-    </View>
+
+          <Text>Diversidade    </Text>
+          <View style={styles.checkbox}>
+            {selectedEstrategiaOcupacao ? <Text style={styles.checkmark}>✓</Text> : null}
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => handleToggleFilterGroup(groupIndex, 'ESTRATEGIA_OCUPACAO')}>
+          <Text>Recobrimento   </Text>
+          <View style={styles.checkbox}>
+            {selectedEstrategiaOcupacao === false ? <Text style={styles.checkmark}>✓</Text> : null}
+          </View>
+</TouchableOpacity>
     <Text style={styles.filterLabel}>Dispersão de Frutos</Text>
     <View style={styles.filterItem}>
 
