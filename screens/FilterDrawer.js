@@ -132,7 +132,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
     setDispValue('');
     onToggleFilter('ESTRATEGIA_DISPERSAO', '');
   };
-  console.log('Filtros Selecionados:', selectedFilters);
+ // console.log('Filtros Selecionados:', selectedFilters);
 
 
  

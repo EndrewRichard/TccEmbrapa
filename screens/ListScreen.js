@@ -109,7 +109,7 @@ const handleToggleFilter = (filterKey) => {
     }
 
     if (filterKey === 'ESTRATEGIA_DISPERSAO') {
-      const dispersaoOptions = ['autocórica', 'zoocórica', 'anemocórica', 'endozoocórica', ''];
+      const dispersaoOptions = ['autocórica', 'zoocórica', 'anemocórica', 'endozoocórica', 'hidrocórica', ''];
       const currentIndex = dispersaoOptions.indexOf(prevFilters[filterKey]);
       const newValue = dispersaoOptions[(currentIndex + 1) % dispersaoOptions.length];
       return {
