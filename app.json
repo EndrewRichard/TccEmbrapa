@@ -24,7 +24,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.endrewrichard.restauraApp",
-      "versionCode": 3 
+      "versionCode": 4
     },
     "web": {
       "favicon": "./assets/icon1024.png"
