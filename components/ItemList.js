@@ -66,7 +66,7 @@ const ItemList = ({ item, onItemClick }) => {
         <Ionicons
           name={isFavorite ? 'heart' : 'heart-outline'}
           size={24}
-          color={isFavorite ? 'lightgreen' : 'black'}
+          color={isFavorite ? 'lightgreen' : 'white'}
           onPress={handleFavoriteToggle}
         />
       </View>

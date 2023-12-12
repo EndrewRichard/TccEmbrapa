@@ -8,16 +8,35 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   Linking,
+  FlatList,
 
 } from 'react-native';
+
+import Modal from 'react-native-modal';
 
 import { Ionicons } from '@expo/vector-icons';
 
 const DetailsScreen = ({ route, navigation }) => {
   const { item } = route.params;
   const [downloadStatus, setDownloadStatus] = useState(null);
+  const [isThreatModalVisible, setThreatModalVisible] = useState(false);
+  const threatLevels = [
+    { abbreviation: 'EX', description: 'Extinta', color: '#000000', textColor: 'red' },
+    { abbreviation: 'EW', description: 'Extinta na natureza', color: '#795548', textColor: 'white' },
+    { abbreviation: 'CR', description: 'Criticamente em perigo', color: '#9C27B0', textColor: 'white' },
+    { abbreviation: 'EN', description: 'Em perigo', color: '#F44336', textColor: 'white' },
+    { abbreviation: 'VU', description: 'Vulnerável', color: '#FF9800', textColor: 'white' },
+    { abbreviation: 'NT', description: 'Quase ameaçado', color: '#FFC107', textColor: 'white' },
+    { abbreviation: 'LC', description: 'Baixo risco', color: '#4CAF50', textColor: 'white' },
+    { abbreviation: 'DD', description: 'Deficiente de dados', color: '#B0BEC5', textColor: 'white' },
 
-  
+
+    { abbreviation: 'NE', description: 'Não avaliada', color: '#d3d3d3', textColor: 'black' },
+    { abbreviation: 'S/I', description: 'Sem informações', color: 'white', textColor: 'black' },
+
+  ];
+
+ 
 
 
   // Função para filtrar os estados que contêm valor 1 no JSON
@@ -63,11 +82,41 @@ const DetailsScreen = ({ route, navigation }) => {
 
   };
 
+  // FUNÇAO PARA COR E TEXTO DE AMEAÇADO
+
+  const getThreatInfo = (threatLevel) => {
+    const defaultInfo = { color: '#B0BEC5', textColor: '#000000' };
+    const threatInfo = threatLevels.find((info) => info.abbreviation === threatLevel) || defaultInfo;
+    return threatInfo;
+  };
+  const threatInfo = getThreatInfo(item.AMEACADO);
+
+  //função para pegar cor
+    const getThreatColor = (threatLevel) => {
+      const threatInfo = threatLevels.find((info) => info.abbreviation === threatLevel);
+      return threatInfo ? threatInfo.color : '#B0BEC5'; // Cor padrão se não encontrar
+    };
+
+  
+    // Função para abrir o modal de ameaça
+    const openThreatInfoModal = () => {
+      setThreatModalVisible(true);
+    };
+  
+    // Função para fechar o modal de ameaça
+    const closeThreatInfoModal = () => {
+      setThreatModalVisible(false);
+    };
+
   const [mudasSementesOpen, setMudasSementesOpen] = useState(false);
   const [ondeOcorreOpen, setOndeOcorreOpen] = useState(false);
   const [caracteristicasSoloOpen, setCaracteristicasSoloOpen] = useState(false);
   const [relacaoAmbienteOpen, setRelacaoAmbienteOpen] = useState(false);
   const [ciclosOpen, setCiclosOpen] = useState(false);
+
+console.log('Valor de item.AMEACADO:', item.AMEACADO);
+const threatColor = getThreatColor(item.AMEACADO);
+console.log('Cor do nível de extinção:', threatColor);
   
 
   
@@ -75,6 +124,8 @@ const DetailsScreen = ({ route, navigation }) => {
   return (
     <View style={styles.container}>
       <ScrollView>
+        {/* funçoes de voltar, botao de downlaod e botao de informaçoes
+        sobre a extinção, além da exibição da especie e autor da mesma*/}
       <TouchableOpacity
           style={styles.goBackContainer}
           onPress={() => navigation.goBack()}
@@ -98,15 +149,39 @@ const DetailsScreen = ({ route, navigation }) => {
                   <Ionicons name="arrow-down-circle" size={30} color="#006122" />
                 )}
               </TouchableOpacity>
+
             </View>
           )}
 
-          </View>
-          <Text style={styles.autor}>{item.AUTOR}{'\n'}</Text>
+
+        </View>
+        <View style={styles.titleContainer}>
+        <Text style={styles.autor}>{item.AUTOR}</Text>
+
+
+        {/* mudar cor da bola e do texto em ameaça de extinção (é igual no modal)*/}
+
+        <TouchableOpacity
+            style={[
+              styles.threatCircle,
+              {
+                backgroundColor: threatInfo.color,
+              },
+            ]}
+            onPress={() => openThreatInfoModal(item.AMEACADO)}
+          >
+            <Text style={[styles.threatText, { color: threatInfo.textColor }]}>
+              {threatInfo.abbreviation}
+            </Text>
+          </TouchableOpacity>
+        </View>
+
+        
+          
 
 
           <View style={styles.infoContainer}>
-            <Text style={styles.sectionTitle}>Uso Econômico:</Text>
+            <Text style={styles.sectionTitle}>{'\n'}Uso Econômico:</Text>
             <View style={styles.useIconsContainer}>
               {filterUsages(item).map((usage) => (
                 <Text key={usage} style={styles.useIcon}>
@@ -389,6 +464,40 @@ const DetailsScreen = ({ route, navigation }) => {
         
         </View>
       </ScrollView>
+
+      <Modal isVisible={isThreatModalVisible} onBackdropPress={closeThreatInfoModal}>
+        <View style={styles.threatModal}>
+          <Text style={styles.threatModalTitle}>Riscos de Extinção</Text>
+          <FlatList
+            data={threatLevels}
+            keyExtractor={(item) => item.abbreviation}
+            renderItem={({ item }) => (
+              <View style={styles.threatModalItem}>
+                <View
+                  style={[
+                    styles.threatModalCircle,
+                    { backgroundColor: item.color },
+                  ]}
+                >
+                  <Text style={[styles.threatModalAbbreviation, { color: item.textColor }]}>
+                    {item.abbreviation}
+                  </Text>
+                </View>
+                <Text style={styles.threatModalDescription}>{item.description}</Text>
+              </View>
+            )}
+          />
+          <TouchableOpacity style={styles.threatModalCloseButton} onPress={closeThreatInfoModal}>
+            <Text style={styles.threatModalCloseButtonText}>Fechar</Text>
+          </TouchableOpacity>
+        </View>
+      </Modal>
+
+
+
+
+
+      
     </View>
   );
 };
@@ -404,6 +513,23 @@ const styles = StyleSheet.create({
     fontStyle: 'italic', // Aplica o estilo italico
     color: '#006122',
     marginBottom: 0,
+  },
+  threatCircle: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: 'red',  // Defina a cor padrão ou use uma função para determinar a cor com base no valor de AMEACADO
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 0,
+    marginTop: 0,
+
+  },
+  
+  threatText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 16,
   },
   autor: {
     fontSize: 28,
@@ -526,6 +652,56 @@ const styles = StyleSheet.create({
     top: 16,
     left: 16,
     zIndex: 1, // Para garantir que o ícone fique acima do conteúdo
+  },
+  // modal de informaçoes
+  threatModal: {
+    backgroundColor: 'white',
+    padding: 20,
+    borderRadius: 10,
+  },
+
+  threatModalTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+
+  threatModalItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+
+  threatModalCircle: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 16, // Ajuste conforme necessário
+  },
+  
+  threatModalAbbreviation: {
+    color: 'black',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+
+  threatModalDescription: {
+    flex: 1,
+  },
+
+  threatModalCloseButton: {
+    marginTop: 10,
+    backgroundColor: '#006122',
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+  },
+
+  threatModalCloseButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
   },
 
 

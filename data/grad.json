@@ -1,5 +1,4 @@
 {
-
   "Dado": [
     {
       "ESPÉCIE": "Abarema brachystachya",
@@ -113,7 +112,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Abarema langsdorffii",
@@ -341,7 +340,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Aegiphila integrifolia",
@@ -455,7 +454,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Agonandra brasiliensis",
@@ -911,7 +910,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Albizia pedicellaris",
@@ -1025,7 +1024,7 @@
       "REFERENCIA2": "BARROS & VERISSIMO, 2002",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Albizia polycephala",
@@ -1139,7 +1138,7 @@
       "REFERENCIA2": "SANQUETTAet al., 2010",
       "REFERENCIA3": "CARVALHO, 2006",
       "REFERENCIA4": "QUEBRA DE DORMÊNCIA DE SEMENTES DE Albizia polycephala (Benth.) Killip1",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Alchornea glandulosa",
@@ -1253,7 +1252,7 @@
       "REFERENCIA2": "BRAGAet al., 2012",
       "REFERENCIA3": "FELFILIet al., 2000",
       "REFERENCIA4": "CARVALHO, 2006",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Alchornea sidifolia",
@@ -1367,7 +1366,7 @@
       "REFERENCIA2": "-",
       "REFERENCIA3": "-",
       "REFERENCIA4": "-",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Alchornea triplinervia",
@@ -1481,7 +1480,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Allophylus edulis",
@@ -1595,7 +1594,7 @@
       "REFERENCIA2": "BRAGAet al., 2012",
       "REFERENCIA3": "CARVALHO, 2006",
       "REFERENCIA4": "SANQUETTAet al., 2010",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Aloysia virgata",
@@ -1709,7 +1708,7 @@
       "REFERENCIA2": "BRAGAet al., 2012",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Alseis floribunda",
@@ -2051,7 +2050,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Anadenanthera colubrina",
@@ -2165,7 +2164,7 @@
       "REFERENCIA2": "Pinto, 1997",
       "REFERENCIA3": "JESUSet al., 2009",
       "REFERENCIA4": "CARVALHO, 2003",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Anadenanthera colubrina var. cebil",
@@ -2279,7 +2278,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Anadenanthera peregrina",
@@ -2393,7 +2392,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "Paulo Ernani vol 1",
       "REFERENCIA4": "CYSNEIROS, 2015",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Anadenanthera peregrina var. falcata",
@@ -2507,7 +2506,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Andira anthelmia",
@@ -2621,7 +2620,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Andira fraxinifolia",
@@ -2735,7 +2734,7 @@
       "REFERENCIA2": "CARVALHO, 2010",
       "REFERENCIA3": "LORENZI, 2002",
       "REFERENCIA4": "UBESSI-MACARINIet al., 2011",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Annona mucosa",
@@ -2849,7 +2848,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Annona cacans",
@@ -2963,7 +2962,7 @@
       "REFERENCIA2": "KINUPP, 2007",
       "REFERENCIA3": "ZUCHIWSCHIet al., 2010",
       "REFERENCIA4": "Carvalho, 2003",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Annona emarginata",
@@ -3077,7 +3076,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 3
+      "AMEACADO": "EN"
     },
     {
       "ESPÉCIE": "Annona emarginata (Annona maritima)",
@@ -3191,7 +3190,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 4
+      "AMEACADO": "VU"
     },
     {
       "ESPÉCIE": "Annona dolabripetala (Annona neosericea)",
@@ -3305,7 +3304,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 3
+      "AMEACADO": "EN"
     },
     {
       "ESPÉCIE": "Annona sylvatica",
@@ -3419,7 +3418,7 @@
       "REFERENCIA2": "WERNECK et al., 2000 b",
       "REFERENCIA3": "NASTRI et al.,1992",
       "REFERENCIA4": "CARVALHO, 1997",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Apeiba tibourbou",
@@ -3647,7 +3646,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 4
+      "AMEACADO": "VU"
     },
     {
       "ESPÉCIE": "Aralia warmingiana",
@@ -3875,7 +3874,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 3
+      "AMEACADO": "EN"
     },
     {
       "ESPÉCIE": "Aspidosperma cylindrocarpon",
@@ -3989,7 +3988,7 @@
       "REFERENCIA2": "FELFILIet al., 2000",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Aspidosperma olivaceum",
@@ -4103,7 +4102,7 @@
       "REFERENCIA2": "FELFILIet al., 2000",
       "REFERENCIA3": "TOLEDO FILHOet al.,1998",
       "REFERENCIA4": "SOARES, 2002",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Aspidosperma parvifolium",
@@ -4217,7 +4216,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Aspidosperma polyneuron",
@@ -4331,7 +4330,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 3
+      "AMEACADO": "EN"
     },
     {
       "ESPÉCIE": "Aspidosperma ramiflorum",
@@ -4445,7 +4444,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Aspidosperma spruceanum",
@@ -4559,7 +4558,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Aspidosperma subincanum",
@@ -4787,7 +4786,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Astronium fraxinifolium",
@@ -4901,7 +4900,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 4
+      "AMEACADO": "VU"
     },
     {
       "ESPÉCIE": "Ateleia glazioveana",
@@ -5015,7 +5014,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Attalea dubia",
@@ -5129,7 +5128,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Bactris setosa",
@@ -5243,7 +5242,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Balfourodendron riedelianum",
@@ -5699,7 +5698,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Bauhinia longifolia",
@@ -5813,7 +5812,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Bauhinia ungulata",
@@ -6041,7 +6040,7 @@
       "REFERENCIA2": "FOWLER & MARTINS, 2001.",
       "REFERENCIA3": "CARVALHAESet al., 2008",
       "REFERENCIA4": "JESUSet al., 2009",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Blepharocalyx salicifolius",
@@ -6269,7 +6268,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Brosimum gaudichaudii",
@@ -6611,7 +6610,7 @@
       "REFERENCIA2": "SCHWARTZ, 2007",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Byrsonima crispa",
@@ -6725,7 +6724,7 @@
       "REFERENCIA2": "SCHWARTZ, 2007",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cabralea canjerana",
@@ -6839,7 +6838,7 @@
       "REFERENCIA2": "Dormência em sementes florestais",
       "REFERENCIA3": "FELFILIet al., 2000",
       "REFERENCIA4": "SANQUETTAet al., 2010",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Libidibia ferrea (Caesalpinia ferrea var. parvifolia)",
@@ -7067,7 +7066,7 @@
       "REFERENCIA2": "CARVALHO, 2003",
       "REFERENCIA3": "EFEITO DA TEMPERATURA E DO TEGUMENTO NA GERMINAÇÃO DE",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Campomanesia aurea",
@@ -7181,7 +7180,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Campomanesia guaviroba",
@@ -7409,7 +7408,7 @@
       "REFERENCIA2": "BOTRELet al., 2006",
       "REFERENCIA3": "FUNDAÇÃO FLORESTAL, 2008",
       "REFERENCIA4": "SANQUETTAet al., 2010",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Campomanesia pubescens",
@@ -7523,7 +7522,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Campomanesia xanthocarpa",
@@ -7637,7 +7636,7 @@
       "REFERENCIA2": "SANQUETTAet al., 2010",
       "REFERENCIA3": "CYSNEIROS, 2015",
       "REFERENCIA4": "SANQUETTAet al., 2010",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cariniana estrellensis",
@@ -7751,7 +7750,7 @@
       "REFERENCIA2": "CARVALHO, 2003",
       "REFERENCIA3": "",
       "REFERENCIA4": "UBESSI-MACARINIet al., 2011",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cariniana legalis",
@@ -7865,7 +7864,7 @@
       "REFERENCIA2": "CARVALHO, 2003",
       "REFERENCIA3": "Morellato, 1991. Carvalho volume 1",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Caryocar brasiliense",
@@ -7979,7 +7978,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Casearia decandra",
@@ -8321,7 +8320,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "CYSNEIROS, 2015",
       "REFERENCIA4": "SANQUETTAet al., 2010",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Cassia ferruginea",
@@ -8435,7 +8434,7 @@
       "REFERENCIA2": "MAY, 2002",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cassia grandis",
@@ -8891,7 +8890,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cecropia pachystachya",
@@ -9005,7 +9004,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cedrela fissilis",
@@ -9119,7 +9118,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cedrela odorata",
@@ -9233,7 +9232,7 @@
       "REFERENCIA2": "FOWLER & MARTINS, 2001.",
       "REFERENCIA3": "MAY, 2002",
       "REFERENCIA4": "GONÇALVESet al., 2012",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Ceiba speciosa",
@@ -9347,7 +9346,7 @@
       "REFERENCIA2": "CYSNEIROS, 2015",
       "REFERENCIA3": "FOWLER & MARTINS, 2001",
       "REFERENCIA4": "KINUPP, 2007",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Celtis iguanaea",
@@ -9461,7 +9460,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "SEMENTES DE Calophyllum brasiliense1",
       "REFERENCIA4": "ZUCHIWSCHIet al., 2010",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Celtis iguanaea (Celtis pubescens)",
@@ -9575,7 +9574,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Centrolobium robustum",
@@ -9689,7 +9688,7 @@
       "REFERENCIA2": "CYSNEIROS, 2015",
       "REFERENCIA3": "LORENZI, 2009",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Centrolobium microchaete",
@@ -10031,7 +10030,7 @@
       "REFERENCIA2": "FIGUEIREDO, 2007",
       "REFERENCIA3": "CARVALHO, 2003",
       "REFERENCIA4": "Morellato,1991; Adiar & Joly,1995, carvalho volume 1",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Chrysophyllum gonocarpum",
@@ -10259,7 +10258,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cinnamodendron dinisii",
@@ -10373,7 +10372,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Aiouea sellowiana (Cinnamomum sellowianum)",
@@ -10601,7 +10600,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Clethra scabra",
@@ -10715,7 +10714,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Clitoria fairchildiana",
@@ -10829,7 +10828,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Clusia criuva",
@@ -11057,7 +11056,7 @@
       "REFERENCIA2": "CARVALHAESet al., 2008",
       "REFERENCIA3": "CARVALHO, 2003",
       "REFERENCIA4": "Kuhlmann & Kuhn,1947; Morellato,1991. Carvalho volume 1",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Colubrina glandulosa subsp. reitzii",
@@ -11285,7 +11284,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Copaifera trapezifolia",
@@ -11399,7 +11398,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cordia superba",
@@ -11513,7 +11512,7 @@
       "REFERENCIA2": "RODRIGUES, 2001",
       "REFERENCIA3": "CARVALHO, 1997",
       "REFERENCIA4": "CARVALHO, 2010",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cordia ecalyculata",
@@ -11627,7 +11626,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cordia trichotoma",
@@ -11741,7 +11740,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Crateva tapia",
@@ -11855,7 +11854,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Croton floribundus",
@@ -11969,7 +11968,7 @@
       "REFERENCIA2": "FUNDAÇÃO FLORESTAL, 2008",
       "REFERENCIA3": "CARVALHO, 2003",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Croton heliotropiifolius",
@@ -12083,7 +12082,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Croton urucurana",
@@ -12197,7 +12196,7 @@
       "REFERENCIA2": "FUNDAÇÃO FLORESTAL, 2008",
       "REFERENCIA3": "BORBA & MACEDO, 2006",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cupania oblongifolia",
@@ -12311,7 +12310,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "CYSNEIROS, 2015",
       "REFERENCIA4": "CARVALHAESet al., 2008",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cupania vernalis",
@@ -12425,7 +12424,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Cybistax antisyphilitica",
@@ -12539,7 +12538,7 @@
       "REFERENCIA2": "FUNDAÇÃO FLORESTAL, 2008",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Dahlstedtia muehlbergiana",
@@ -12653,7 +12652,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Dalbergia brasiliensis",
@@ -12881,7 +12880,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Dalbergia nigra",
@@ -12995,7 +12994,7 @@
       "REFERENCIA2": "FIGUEIREDO, 2008",
       "REFERENCIA3": "CARVALHO, 2003",
       "REFERENCIA4": "",
-      "AMEACADO": 4
+      "AMEACADO": "VU"
     },
     {
       "ESPÉCIE": "Dasyphyllum brasiliense (Dasyphyllum tomentosum)",
@@ -13451,7 +13450,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Enterolobium contortisiliquum",
@@ -13565,7 +13564,7 @@
       "REFERENCIA2": "SANQUETTAet al., 2010",
       "REFERENCIA3": "BRUNING et al. 2011.",
       "REFERENCIA4": "BRAGAet al., 2012",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Enterolobium contortisiliquum ",
@@ -13793,7 +13792,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Eriotheca candolleana",
@@ -13907,7 +13906,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Erythrina falcata",
@@ -14021,7 +14020,7 @@
       "REFERENCIA2": "LORENZI, 2002a",
       "REFERENCIA3": "Kuhlmann &Kuhn, 1947; Morellato, 1991. Carvalho volume 1",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Erythrina crista-galli",
@@ -14135,7 +14134,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Erythrina speciosa",
@@ -14249,7 +14248,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Erythrina verna",
@@ -14363,7 +14362,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Escallonia bifida",
@@ -14705,7 +14704,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Esenbeckia leiocarpa",
@@ -14933,7 +14932,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Eugenia dysenterica",
@@ -15047,7 +15046,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Eugenia florida",
@@ -15161,7 +15160,7 @@
       "REFERENCIA2": "UBESSI-MACARINIet al., 2011",
       "REFERENCIA3": "FUNDAÇÃO FLORESTAL, 2008",
       "REFERENCIA4": "KINUPP, 2007",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Eugenia involucrata",
@@ -15617,7 +15616,7 @@
       "REFERENCIA2": "BOTRELet al., 2006",
       "REFERENCIA3": "SANQUETTAet al., 2010",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Euplassa cantareirae",
@@ -15845,7 +15844,7 @@
       "REFERENCIA2": "Escolha de espécies, planejamento e sistemas de produção para reflorestamento em pequenas propriedades no estado do Paraná. (livro laboratório).",
       "REFERENCIA3": "FOWLER & MARTINS, 2001.",
       "REFERENCIA4": "CYSNEIROS, 2015",
-      "AMEACADO": 4
+      "AMEACADO": "VU"
     },
     {
       "ESPÉCIE": "Ficus enormis",
@@ -15959,7 +15958,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Ficus gomelleira",
@@ -16073,7 +16072,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Gallesia integrifolia",
@@ -16187,7 +16186,7 @@
       "REFERENCIA2": "FUNDAÇÃO FLORESTAL, 2008",
       "REFERENCIA3": "XAVIER & LEITE, 2008",
       "REFERENCIA4": "CARVALHO, 2003",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Garcinia gardneriana",
@@ -16301,7 +16300,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Genipa americana",
@@ -16415,7 +16414,7 @@
       "REFERENCIA2": "PINTOet al., 2006",
       "REFERENCIA3": "MOREIRAet al., 2002",
       "REFERENCIA4": "CARVALHO, 2003",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Gleditsia amorphoides",
@@ -16757,7 +16756,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "CYSNEIROS, 2015",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Guarea guidonia",
@@ -16871,7 +16870,7 @@
       "REFERENCIA2": "FIGUEIREDO, 2007",
       "REFERENCIA3": "CYSNEIROS, 2015",
       "REFERENCIA4": "UBESSI-MACARINIet al., 2011",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Guarea kunthiana",
@@ -16985,7 +16984,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Guarea macrophylla",
@@ -17099,7 +17098,7 @@
       "REFERENCIA2": "FUNDAÇÃO FLORESTAL, 2008",
       "REFERENCIA3": "UBESSI-MACARINIet al., 2011",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Guazuma ulmifolia",
@@ -17213,7 +17212,7 @@
       "REFERENCIA2": "CARVALHO, 2006",
       "REFERENCIA3": "",
       "REFERENCIA4": "KINUPP, 2007",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Gymnanthes klotzschiana",
@@ -17327,7 +17326,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Handroanthus chrysotrichus",
@@ -17441,7 +17440,7 @@
       "REFERENCIA2": "SANQUETTAet al., 2010",
       "REFERENCIA3": "",
       "REFERENCIA4": "CYSNEIROS, 2015",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Handroanthus albus",
@@ -17555,7 +17554,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Handroanthus heptaphyllus",
@@ -17669,7 +17668,7 @@
       "REFERENCIA2": "RUSCHELet al., 2003",
       "REFERENCIA3": "CARVALHO, 2003",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Handroanthus impetiginosus",
@@ -17783,7 +17782,7 @@
       "REFERENCIA2": "OLIVEIRA & SCOLFORO, 2008",
       "REFERENCIA3": "FELFILIet al., 2000",
       "REFERENCIA4": "SANTANA et al., 2008",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Handroanthus ochraceus",
@@ -17897,7 +17896,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Handroanthus serratifolius",
@@ -18011,7 +18010,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Handroanthus umbellatus",
@@ -18125,7 +18124,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Helietta apiculata",
@@ -18467,7 +18466,7 @@
       "REFERENCIA2": "CARVALHO, 2008",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Holocalyx balansae",
@@ -18581,7 +18580,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Hymenaea courbaril",
@@ -18695,7 +18694,7 @@
       "REFERENCIA2": "ALVINOet al., 2005",
       "REFERENCIA3": "FUNDAÇÃO FLORESTAL, 2008",
       "REFERENCIA4": "FELFILIet al., 2000",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Ilex brevicuspis",
@@ -18923,7 +18922,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Ilex dumosa",
@@ -19037,7 +19036,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Ilex paraguariensis",
@@ -19151,7 +19150,7 @@
       "REFERENCIA2": "Escolha de espécies, planejamento e sistemas de produção para reflorestamento em pequenas propriedades no estado do Paraná. (livro laboratório).",
       "REFERENCIA3": "ZUCHIWSCHIet al., 2010",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Ilex theezans",
@@ -19379,7 +19378,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Inga edulis",
@@ -19493,7 +19492,7 @@
       "REFERENCIA2": "LORENZI, 2002b",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Inga laurina",
@@ -19607,7 +19606,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Inga marginata",
@@ -19721,7 +19720,7 @@
       "REFERENCIA2": "CARVALHO, 2006",
       "REFERENCIA3": "VASCONCELOSet al.,1992",
       "REFERENCIA4": "VILELAet al.,1994",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Inga sessilis",
@@ -19835,7 +19834,7 @@
       "REFERENCIA2": "Piratelli, 1993, carvalho volume 1",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Inga vera",
@@ -19949,7 +19948,7 @@
       "REFERENCIA2": "HOEHNE, 1979",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Inga vera subsp. affinis",
@@ -20291,7 +20290,7 @@
       "REFERENCIA2": "SANQUETTAet al., 2010",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Jacaranda cuspidifolia",
@@ -20405,7 +20404,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Jacaranda micrantha",
@@ -20519,7 +20518,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Jacaratia spinosa",
@@ -20633,7 +20632,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Joannesia princeps",
@@ -20747,7 +20746,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Lafoensia pacari",
@@ -20975,7 +20974,7 @@
       "REFERENCIA2": "MOREIRAet al., 2002",
       "REFERENCIA3": "ALMEIDA, 2010",
       "REFERENCIA4": "SCHWARTZ, 2007",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Lecythis lanceolata",
@@ -21089,7 +21088,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Leucochloron incuriale",
@@ -21317,7 +21316,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Lithraea brasiliensis (Lithrea brasiliensis)",
@@ -21431,7 +21430,7 @@
       "REFERENCIA2": "CHAVES & MANFREDI, 2010",
       "REFERENCIA3": "MARTINSet al., 2011",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Lithraea molleoides (Lithrea molleoides)",
@@ -21545,7 +21544,7 @@
       "REFERENCIA2": "BOTRELet al., 2006",
       "REFERENCIA3": "CARVALHO, 2006",
       "REFERENCIA4": "MOREIRA FILHO, 1972",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Lonchocarpus cultratus",
@@ -21659,7 +21658,7 @@
       "REFERENCIA2": "UBESSI-MACARINIet al., 2011",
       "REFERENCIA3": "RUSCHELet al., 2003",
       "REFERENCIA4": "ZUCHIWSCHIet al., 2010",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Lonchocarpus nitidus",
@@ -22001,7 +22000,7 @@
       "REFERENCIA2": "CARVALHO, 2003",
       "REFERENCIA3": "",
       "REFERENCIA4": "CARVALHAESet al., 2008",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Luehea grandiflora",
@@ -22115,7 +22114,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Luehea paniculata",
@@ -22229,7 +22228,7 @@
       "REFERENCIA2": "flora.ipe.org.br/sp/220?pdf=1",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Mabea fistulifera",
@@ -22343,7 +22342,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "CYSNEIROS, 2015",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Machaerium stipitatum",
@@ -22457,7 +22456,7 @@
       "REFERENCIA2": "CARVALHO, 2006",
       "REFERENCIA3": "NASCIMENTOet al.,2004",
       "REFERENCIA4": "BOTRELet al., 2006",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Machaerium acutifolium",
@@ -22571,7 +22570,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "MAY, 2002",
       "REFERENCIA4": "FUNDAÇÃO FLORESTAL, 2008",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Machaerium brasiliense",
@@ -22685,7 +22684,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Machaerium hirtum",
@@ -22799,7 +22798,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "BOTRELet al., 2006",
       "REFERENCIA4": "BOTRELet al., 2006",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Machaerium nyctitans",
@@ -22913,7 +22912,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "BOTRELet al., 2006",
       "REFERENCIA4": "RUSCHELet al., 2003",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Machaerium paraguariense",
@@ -23141,7 +23140,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Maclura tinctoria",
@@ -23369,7 +23368,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Manilkara salzmannii",
@@ -23483,7 +23482,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Manilkara subsericea",
@@ -23711,7 +23710,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "CYSNEIROS, 2015",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Matayba elaeagnoides",
@@ -23825,7 +23824,7 @@
       "REFERENCIA2": "SANQUETTAet al., 2010",
       "REFERENCIA3": "",
       "REFERENCIA4": "FUNDAÇÃO FLORESTAL, 2008",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Matayba guianensis",
@@ -23939,7 +23938,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Monteverdia ilicifolia (Maytenus ilicifolia)",
@@ -24053,7 +24052,7 @@
       "REFERENCIA2": "CHAVES & MANFREDI, 2010",
       "REFERENCIA3": "BORBA & MACEDO, 2006",
       "REFERENCIA4": "SHANLEYet al., 2005",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Monteverdia aquifolium (Maytenus aquifolia)",
@@ -24167,7 +24166,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Monteverdia gonoclada (Maytenus robusta)",
@@ -24281,7 +24280,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Melanoxylon brauna",
@@ -24395,7 +24394,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 4
+      "AMEACADO": "VU"
     },
     {
       "ESPÉCIE": "Metrodorea stipularis",
@@ -24509,7 +24508,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Miconia albicans",
@@ -24623,7 +24622,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Miconia formosa (Miconia cabucu)",
@@ -24851,7 +24850,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Miconia sellowiana",
@@ -24965,7 +24964,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Mimosa schomburgkii (Mimosa artemisiana)",
@@ -25079,7 +25078,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Mimosa bimucronata",
@@ -25193,7 +25192,7 @@
       "REFERENCIA2": "CARVALHO, 2003",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Mimosa flocculosa",
@@ -25649,7 +25648,7 @@
       "REFERENCIA2": "CARVALHO, 2003",
       "REFERENCIA3": "Catharino et al.,1982; Pirani & Cortopassi - Laurino, 1993. Carvalho volume 1",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Moquiniastrum polymorphum",
@@ -25763,7 +25762,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Astronium urundeuva (Myracrodruon urundeuva)",
@@ -25877,7 +25876,7 @@
       "REFERENCIA2": "Carvalho, 2003",
       "REFERENCIA3": "FERRAZet al., 2005",
       "REFERENCIA4": "JESUSet al., 2009",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Myrcia splendens",
@@ -25991,7 +25990,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Myrocarpus frondosus",
@@ -26105,7 +26104,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "RUSCHELet al., 2003",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Myroxylon peruiferum",
@@ -26219,7 +26218,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Myrsine coriacea",
@@ -26333,7 +26332,7 @@
       "REFERENCIA2": "CHAVES & MANFREDI, 2010",
       "REFERENCIA3": "MARTINSet al., 2011",
       "REFERENCIA4": "SANQUETTAet al., 2010",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Myrsine guianensis",
@@ -26447,7 +26446,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Nectandra lanceolata",
@@ -26561,7 +26560,7 @@
       "REFERENCIA2": "RUSCHELet al., 2003",
       "REFERENCIA3": "CARVALHO, 2003",
       "REFERENCIA4": "Morellato, 1991. Carvalho volume 1",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Nectandra grandiflora",
@@ -26675,7 +26674,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Nectandra leucantha",
@@ -26789,7 +26788,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Nectandra megapotamica",
@@ -26903,7 +26902,7 @@
       "REFERENCIA2": "SANQUETTAet al., 2010",
       "REFERENCIA3": "RUSCHELet al., 2003",
       "REFERENCIA4": "ZUCHIWSCHIet al., 2010",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Nectandra membranacea",
@@ -27017,7 +27016,7 @@
       "REFERENCIA2": "SANQUETTAet al., 2010",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Nectandra oppositifolia",
@@ -27131,7 +27130,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Nectandra reticulata",
@@ -27245,7 +27244,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Ocotea pulchella",
@@ -27359,7 +27358,7 @@
       "REFERENCIA2": "CHAVES & MANFREDI, 2010",
       "REFERENCIA3": "GALVÃOet al.,1989",
       "REFERENCIA4": "RODRIGUES, 2001",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Ocotea catharinensis",
@@ -27701,7 +27700,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Ocotea odorifera",
@@ -27815,7 +27814,7 @@
       "REFERENCIA2": "CARVALHAESet al., 2008",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 3
+      "AMEACADO": "EN"
     },
     {
       "ESPÉCIE": "Ocotea porosa",
@@ -27929,7 +27928,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 3
+      "AMEACADO": "EN"
     },
     {
       "ESPÉCIE": "Ocotea puberula",
@@ -28043,7 +28042,7 @@
       "REFERENCIA2": "SANQUETTAet al., 2010",
       "REFERENCIA3": "RUSCHELet al., 2003",
       "REFERENCIA4": "ZUCHIWSCHIet al., 2010",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Oreopanax fulvus",
@@ -28271,7 +28270,7 @@
       "REFERENCIA2": "(FERNANDES; VINHA, 1984)",
       "REFERENCIA3": "",
       "REFERENCIA4": "LORENZI, 2002a",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pachira glabra",
@@ -28385,7 +28384,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Parapiptadenia rigida",
@@ -28499,7 +28498,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "BRUNING et al. 2011.",
       "REFERENCIA4": "Carvalheiro & Ameixeiro, 1992, carvalho volume 1",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Parkia pendula",
@@ -28727,7 +28726,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "MAY, 2002",
       "REFERENCIA4": "CARVALHO, 2003",
-      "AMEACADO": 3
+      "AMEACADO": "EN"
     },
     {
       "ESPÉCIE": "Peltogyne angustiflora",
@@ -28841,7 +28840,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 3
+      "AMEACADO": "EN"
     },
     {
       "ESPÉCIE": "Peltophorum dubium",
@@ -28955,7 +28954,7 @@
       "REFERENCIA2": "RUSCHELet al., 2003",
       "REFERENCIA3": "FUNDAÇÃO FLORESTAL, 2008",
       "REFERENCIA4": "UBESSI-MACARINIet al., 2011",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pera glabrata",
@@ -29069,7 +29068,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Persea major",
@@ -29183,7 +29182,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Phytolacca dioica",
@@ -29297,7 +29296,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Picrasma crenata",
@@ -29525,7 +29524,7 @@
       "REFERENCIA2": "CYSNEIROS, 2015",
       "REFERENCIA3": "FELFILIet al., 2000",
       "REFERENCIA4": "BOTRELet al., 2006",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Piptadenia paniculata",
@@ -29639,7 +29638,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Piptocarpha angustifolia",
@@ -30209,7 +30208,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "CARVALHOet al.,2000; TAVARESet al.,1974",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Plinia edulis",
@@ -30323,7 +30322,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 4
+      "AMEACADO": "VU"
     },
     {
       "ESPÉCIE": "Plinia peruviana",
@@ -30437,7 +30436,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Podocarpus lambertii",
@@ -30893,7 +30892,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Posoqueria latifolia",
@@ -31007,7 +31006,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pourouma guianensis",
@@ -31121,7 +31120,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pouteria caimito",
@@ -31235,7 +31234,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pouteria gardneriana",
@@ -31349,7 +31348,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pouteria torta",
@@ -31577,7 +31576,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Protium kleinii",
@@ -32033,7 +32032,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "CYSNEIROS, 2015",
       "REFERENCIA4": "MAY, 2002",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pseudobombax longiflorum",
@@ -32147,7 +32146,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pseudopiptadenia contorta",
@@ -32261,7 +32260,7 @@
       "REFERENCIA2": "CYSNEIROS, 2015",
       "REFERENCIA3": "PEREIRAet al. 2008",
       "REFERENCIA4": "LORENZI, 2009",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pseudopiptadenia warmingii",
@@ -32375,7 +32374,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Psidium cattleyanum (Psidium cattleianum)",
@@ -32489,7 +32488,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Psidium guajava",
@@ -32603,7 +32602,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Psidium guineense",
@@ -32717,7 +32716,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Psidium rufum",
@@ -32831,7 +32830,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pterocarpus rohrii",
@@ -32945,7 +32944,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pterogyne nitens",
@@ -33059,7 +33058,7 @@
       "REFERENCIA2": "FUNDAÇÃO FLORESTAL, 2008",
       "REFERENCIA3": "XAVIER & LEITE, 2008",
       "REFERENCIA4": "CARVALHO, 2003",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Qualea grandiflora",
@@ -33173,7 +33172,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Qualea grandiflora ",
@@ -33401,7 +33400,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Quillaja lancifolia (Quillaja brasiliensis)",
@@ -33629,7 +33628,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Randia ferox",
@@ -33857,7 +33856,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Rhamnidium elaeocarpum",
@@ -34085,7 +34084,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Rhizophora mangle",
@@ -34199,7 +34198,7 @@
       "REFERENCIA2": "LORENZI, 2009",
       "REFERENCIA3": "-",
       "REFERENCIA4": "-",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Roupala montana var. brasiliensis  (Roupala brasiliensis)",
@@ -34655,7 +34654,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "http://www.clickmudas.com.br/catalogsearch/result/?q=salacia+eliptica+sementes",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Salix humboldtiana",
@@ -34883,7 +34882,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Sapindus saponaria",
@@ -34997,7 +34996,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "FERRAZet al., 2005",
       "REFERENCIA4": "ALVINOet al., 2005",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Sapium glandulosum",
@@ -35111,7 +35110,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Didymopanax angustissimus (Schefflera angustissima)",
@@ -35225,7 +35224,7 @@
       "REFERENCIA2": "ROTTA, 1992",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Didymopanax macrocarpus (Schefflera macrocarpa)",
@@ -35339,7 +35338,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Didymopanax morototoni (Schefflera morototoni)",
@@ -35453,7 +35452,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Schinus terebinthifolia (Schinus terebinthifolius)",
@@ -35567,7 +35566,7 @@
       "REFERENCIA2": "Escolha de espécies, planejamento e sistemas de produção para reflorestamento em pequenas propriedades no estado do Paraná. (livro laboratório).",
       "REFERENCIA3": "FOWLER & MARTINS, 2001.",
       "REFERENCIA4": "BOTRELet al., 2006",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Schinus molle",
@@ -35681,7 +35680,7 @@
       "REFERENCIA2": "Carvalho, 2003",
       "REFERENCIA3": "CARVALHAESet al., 2008",
       "REFERENCIA4": "ALMEIDA, 2010",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Schizolobium parahyba",
@@ -35795,7 +35794,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Scutia buxifolia",
@@ -36023,7 +36022,7 @@
       "REFERENCIA2": "SANQUETTAet al., 2010",
       "REFERENCIA3": "CHAVES & MANFREDI, 2010",
       "REFERENCIA4": "ZUCHIWSCHIet al., 2010",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Seguieria langsdorffii",
@@ -36251,7 +36250,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Senna macranthera",
@@ -36365,7 +36364,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Senna multijuga",
@@ -36479,7 +36478,7 @@
       "REFERENCIA2": "(NOGUEIRA;BRANCALION,2016)",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Senna occidentalis",
@@ -36593,7 +36592,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Senna spectabilis",
@@ -36935,7 +36934,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Siparuna guianensis",
@@ -37049,7 +37048,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Sloanea guianensis",
@@ -37163,7 +37162,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Sloanea hirsuta (Sloanea monosperma)",
@@ -37505,7 +37504,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Solanum lycocarpum",
@@ -37961,7 +37960,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Spondias mombin",
@@ -38075,7 +38074,7 @@
       "REFERENCIA2": "NASCIMENTO,et al., 2004",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Sterculia curiosa",
@@ -38303,7 +38302,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Stryphnodendron polyphyllum",
@@ -38417,7 +38416,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Styrax acuminatus",
@@ -38759,7 +38758,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Swartzia multijuga",
@@ -38873,7 +38872,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Swietenia macrophylla",
@@ -39101,7 +39100,7 @@
       "REFERENCIA2": "SANQUETTAet al., 2010",
       "REFERENCIA3": "CARVALHO, 2006",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Symphonia globulifera",
@@ -39215,7 +39214,7 @@
       "REFERENCIA2": "CYSNEIROS, 2015",
       "REFERENCIA3": "FERNANDES, 1984",
       "REFERENCIA4": "RODAL, 2006",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Symplocos glandulosomarginata",
@@ -39557,7 +39556,7 @@
       "REFERENCIA2": "FOWLER & MARTINS, 2001.",
       "REFERENCIA3": "FELFILIet al., 2000",
       "REFERENCIA4": "CARVALHO, 2003",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Handroanthus albus (Tabebuia alba)",
@@ -39899,7 +39898,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 3
+      "AMEACADO": "EN"
     },
     {
       "ESPÉCIE": "Tabernaemontana laeta",
@@ -40013,7 +40012,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Tabernaemontana catharinensis",
@@ -40127,7 +40126,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Tachigali rugosa",
@@ -40241,7 +40240,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Talipariti pernambucense",
@@ -40355,7 +40354,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Tapirira guianensis",
@@ -40469,7 +40468,7 @@
       "REFERENCIA2": "FELFILIet al., 2000",
       "REFERENCIA3": "SCHWARTZ, 2007",
       "REFERENCIA4": "CARVALHO, 2006",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Tapirira obtusa",
@@ -40583,7 +40582,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Terminalia argentea",
@@ -40811,7 +40810,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pleroma mutabile (Tibouchina mutabilis)",
@@ -40925,7 +40924,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Pleroma sellowianum (Tibouchina sellowiana)",
@@ -41153,7 +41152,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Trichilia catigua",
@@ -41267,7 +41266,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Trichilia clausseni",
@@ -41381,7 +41380,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Trichilia elegans",
@@ -41495,7 +41494,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Triplaris americana",
@@ -41609,7 +41608,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Vataireopsis araroba",
@@ -41723,7 +41722,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Vernonanthura discolor",
@@ -41837,7 +41836,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Virola bicuhyba",
@@ -41951,7 +41950,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 3
+      "AMEACADO": "EN"
     },
     {
       "ESPÉCIE": "Virola gardneri",
@@ -42179,7 +42178,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Vitex megapotamica",
@@ -42293,7 +42292,7 @@
       "REFERENCIA2": "UBESSI-MACARINIet al., 2011",
       "REFERENCIA3": "RUSCHELet al., 2003",
       "REFERENCIA4": "KINUPP, 2007",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Vitex polygama",
@@ -42407,7 +42406,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Vochysia bifalcata",
@@ -42749,7 +42748,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Xylopia aromatica",
@@ -42863,7 +42862,7 @@
       "REFERENCIA2": "MAY, 2002",
       "REFERENCIA3": "FUNDAÇÃO FLORESTAL, 2008",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Xylopia brasiliensis",
@@ -43091,7 +43090,7 @@
       "REFERENCIA2": "SCHWARTZ, 2007",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Xylopia sericea",
@@ -43205,7 +43204,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Zanthoxylum riedelianum",
@@ -43319,7 +43318,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Zanthoxylum rhoifolium",
@@ -43433,7 +43432,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 6
+      "AMEACADO": "LC"
     },
     {
       "ESPÉCIE": "Zeyheria montana",
@@ -43547,7 +43546,7 @@
       "REFERENCIA2": "-",
       "REFERENCIA3": "-",
       "REFERENCIA4": "-",
-      "AMEACADO": 7
+      "AMEACADO": "S/I"
     },
     {
       "ESPÉCIE": "Zeyheria tuberculosa",
@@ -43661,7 +43660,7 @@
       "REFERENCIA2": "",
       "REFERENCIA3": "",
       "REFERENCIA4": "",
-      "AMEACADO": 4
+      "AMEACADO": "VU"
     }
   ]
 }
