@@ -1,0 +1,20 @@
+O arquivo lido pelo programa é o grad.json, para ajudar na vizualização e edição, e tambem na sincronia com a planilha da EMBRAPA, existe o grad.xlsx.
+
+1 - Atualizar ou sincronizar com a planilha da EMBRAPA
+2 - Exportar em XML
+3 - Gerar Json com dados atualizados
+
+4 - Ao abrir esse json voce verá:
+    {
+        "Dado": [
+            {
+            "ESPÉCIE": "Abarema brachystachya",
+            "AUTOR": "(DC.) Barneby & J.W.Grimes",
+            ...
+            }
+        ]
+    }
+
+5 - Colar informaçoes convertidas do xlm para Json apartir do ´[´ depois de ´dado´ e parar no ´]´.
+
+6 - Site usado na ultima conversão 12/2023  --  https://csvjson.com/

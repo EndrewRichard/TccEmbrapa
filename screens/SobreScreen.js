@@ -17,20 +17,24 @@ const SobreScreen = () => {
             <Text>{'\n'}</Text>
 
     <Text><Text style = {styles.wordBold}>Restaura </Text>
-         É um aplicativo movel que permite recuperar informações sobre espécies nativas da Mata Atlântica. Seu intuito é facilmente ser utilizado.
-         Ele foi concebido e organizado para ser utilizado por leigos ou especialistas em Agropecuaria.
+         É um aplicativo movel que permite recuperar informações sobre espécies nativas da Mata Atlântica, 
+         e foi desenvolvido a partir de uma lista de espécies arbóreas nativas da Mata Atlântica elaborada por pesquisadores da Embrapa Agrobiologia. 
+         Seu intuito é facilmente ser utilizado.
+         Ele foi concebido e organizado para ser utilizado por leigos ou especialistas em meio ambiente e agropecuária.
+.
     </Text>
     <Text>{'\n'}
          As informações fornecidas pelo <Text style = {styles.wordBold}>Restaura </Text> são públicas e podem facilmente
          ser utilizadas por pessoas ou organizações que tenham interesse em contribuir na recuperação desse importante bioma brasileiro.
     </Text>
     <Text>{'\n'}
-       O <Text style = {styles.wordBold}>Restaura </Text> tem como objetivo facilitar a difusão de informações sobre as especies vegetais que podem ser utilizadas em projetos de reflorestamento
+       O <Text style = {styles.wordBold}>Restaura </Text> tem como objetivo facilitar a difusão de informações sobre as 
+       especies vegetais que podem ser utilizadas em projetos de restauração florestal e reflorestamento.
     </Text>
     <Text>{'\n'}
        A primeira versão do <Text style = {styles.wordBold}>Restaura </Text> foi totalmente concebido, projetado e desenvolvido por uma euqipe multidisciplinar 
        de alunos da <Text style = {styles.wordBold}>Universidade Federal Rural do Rio de Janeiro (UFRRJ) </Text>
-       durante as etapas da hackathon Academico da Embrapa. Os desenvolvedores sao membros dos cursos de Sistemas de Informação e Agronomia da universidade e membros do programa
+       durante as etapas da hackathon Acadêmica da Embrapa. Os desenvolvedores sao membros dos cursos de Sistemas de Informação e Agronomia da universidade e membros do programa
        {' '} 
        <Text 
           style={styles.hyperlinkStyle} 
@@ -38,10 +42,31 @@ const SobreScreen = () => {
              Linking.openURL('https://r1.ufrrj.br/petsi'); 
           }}> 
         PET-SI da UFRRJ.</Text> 
-        {'\n'}
-        A Equipe de desenvolvimento levava o titulo de Dobereiner, uma homenagem a grande pesquisadora Johanna Dobereiner, que iniciou um programa de pesquisas
-         sobre aspectos limitantes da fixação biologia de nitrogenio (FBN), tendo seu nome presente na lista de indicaçoes do premio Nobel.
+        {'\n'}{'\n'}
+
+        Esta segunda versão, que acrescenta novas espécies à lista da primeira versão, 
+        teve a colaboração da equipe de TI da <Text style = {styles.wordBold}>Embrapa Florestas</Text> e do petiano <Text style = {styles.wordBold}>Endrew Richard</Text>, que viabilizou o acesso (quando houver rede disponível) 
+        aos cards das espécies disponíveis nos cinco volumes dos livros<Text style = {styles.wordBold}> “Espécies Arbóreas Brasileiras”</Text> , 
+        de Paulo Ernani Ramalho Carvalho, pesquisador aposentado daquela Unidade.
+        {'\n'}{'\n'}
+
+        A Equipe de desenvolvimento levava o titulo de <Text style = {styles.wordBold}>Döbereiner</Text>, uma homenagem a grande pesquisadora <Text style = {styles.wordBold}>Johanna Döbereiner</Text> , que iniciou um programa de pesquisas
+         sobre aspectos limitantes da fixação biologia de nitrogenio (FBN), tendo seu nome presente na lista de indicaçoes do premio Nobel.{'\n'}
     </Text>
+
+    <View style={styles.moreInfoContainer}><Text style = {{textAlignVertical: 'center', textAlign: "center", color: "white"}}>
+        
+        Se você, usuário deste aplicativo, dispuser de alguma informação sobre 
+        as espécies que queira compartilhar para enriquecer nossa lista, envie uma mensagem para: {'\n'}</Text>
+        <Text style = {{...styles.wordBold, textAlignVertical: 'center', textAlign: "center", color: "white"}}onPress={() => { 
+                Linking.openURL('mailto:cnpab.restaura@embrapa.br'); 
+            }}> cnpab.restaura@embrapa.br{'\n'} </Text> 
+         <Text style = {{textAlignVertical: 'center', textAlign: "center", color: "white"}}>   
+         O<Text style = {{...styles.wordBold, color: "white"}}> Restaura Mata Atlântica</Text> é um produto de construção contínua e coletiva.
+         {'\n'}
+        Gratos.
+        </Text>
+    </View>
 
     <Text  style = {{textAlignVertical: 'center', textAlign: "center"}}>{'\n'}{'\n'}
     <Text style = {styles.wordBold}>Equipe de desenvolvimento 1° versão {'\n'}</Text>
@@ -85,7 +110,7 @@ const SobreScreen = () => {
 
                 
     <Text style = {styles.wordBold}>Padrinho da equipe Dobereiner e do projeto {'\n'}</Text>
-    <Text>Dr. Luiz Ferbabdi Duarte de Moraes (EMBRAPA){'\n'}</Text>
+    <Text>Dr. Luiz Fernando Duarte de Moraes (EMBRAPA){'\n'}</Text>
         <Text 
         style={styles.hyperlinkStyle} 
         onPress={() => { 
@@ -122,9 +147,9 @@ const SobreScreen = () => {
 
     <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
          <Image 
-            style={{ width: '20%', height: 100, marginRight: '1%' }}
+            style={{ width: '22%', height: 113, marginRight: '1%' }}
             resizeMode={'contain'}
-            source={require('../assets/ic_pet_si.png')}
+            source={require('../assets/PET_SI_Logo_10anos.png')}
           /> 
           <Image 
             style={{ width: '20%', height: 100, marginRight: '1%' }}
@@ -159,23 +184,6 @@ const SobreScreen = () => {
     Chefe Adjunta de Administração{'\n'}{'\n'}{'\n'}{'\n'}
 
      </Text>
-
-    <View style={styles.moreInfoContainer}><Text style = {{textAlignVertical: 'center', textAlign: "center", color: "white"}}>
-        
-    Se você, usuário deste aplicativo, dispuser de alguma informação sobre as espécies
-    que queira compartilhar para enriquecer nossa lista, envie uma mensagem para:{'\n'}</Text>
-    <Text style = {{...styles.wordBold, textAlignVertical: 'center', textAlign: "center", color: "white"}}onPress={() => { 
-            Linking.openURL('mailto:cnpab.restaura@embrapa.br'); 
-        }}> cnpab.restaura@embrapa.br{'\n'} </Text> 
-     <Text style = {{textAlignVertical: 'center', textAlign: "center", color: "white"}}>   
-    O Restaura Mata Atlântica é um produto de 
-    construção contínua e coletiva. 
-
-    Gratos.
-    </Text>
-    </View>
-
-
 
 
    

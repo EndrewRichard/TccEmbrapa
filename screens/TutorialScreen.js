@@ -37,9 +37,9 @@ const TutorialScreen = () => {
 
          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
          <Image 
-            style={{ width: '20%', height: 100, marginRight: '1%' }}
+            style={{ width: '22%', height: 113, marginRight: '1%' }}
             resizeMode={'contain'}
-            source={require('../assets/ic_pet_si.png')}
+            source={require('../assets/PET_SI_Logo_10anos.png')}
           /> 
           <Image 
             style={{ width: '20%', height: 100, marginRight: '1%' }}

@@ -22,17 +22,16 @@ const DetailsScreen = ({ route, navigation }) => {
   const [isThreatModalVisible, setThreatModalVisible] = useState(false);
   const threatLevels = [
     { abbreviation: 'EX', description: 'Extinta', color: '#000000', textColor: 'red' },
-    { abbreviation: 'EW', description: 'Extinta na natureza', color: '#795548', textColor: 'white' },
-    { abbreviation: 'CR', description: 'Criticamente em perigo', color: '#9C27B0', textColor: 'white' },
-    { abbreviation: 'EN', description: 'Em perigo', color: '#F44336', textColor: 'white' },
-    { abbreviation: 'VU', description: 'Vulnerável', color: '#FF9800', textColor: 'white' },
-    { abbreviation: 'NT', description: 'Quase ameaçado', color: '#FFC107', textColor: 'white' },
-    { abbreviation: 'LC', description: 'Baixo risco', color: '#4CAF50', textColor: 'white' },
-    { abbreviation: 'DD', description: 'Deficiente de dados', color: '#B0BEC5', textColor: 'white' },
+    { abbreviation: 'EW', description: 'Extinta na natureza', color: '#000000', textColor: 'white' },
+    { abbreviation: 'CR', description: 'Criticamente em perigo', color: '#D62128', textColor: 'white' },
+    { abbreviation: 'EN', description: 'Em perigo', color: '#EF7C23', textColor: 'white' },
+    { abbreviation: 'VU', description: 'Vulnerável', color: '#FFBD14', textColor: 'white' },
+    { abbreviation: 'NT', description: 'Quase ameaçado', color: '#759741', textColor: 'white' },
+    { abbreviation: 'LC', description: 'Baixo risco', color: '#027568', textColor: 'white' },
+    { abbreviation: 'DD', description: 'Deficiente de dados', color: '#D0D4D7', textColor: 'white' },
 
 
-    { abbreviation: 'NE', description: 'Não avaliada', color: '#d3d3d3', textColor: 'black' },
-    { abbreviation: 'S/I', description: 'Sem informações', color: 'white', textColor: 'black' },
+    { abbreviation: 'NE', description: 'Não avaliada', color: 'white', textColor: 'black' },
 
   ];
 
