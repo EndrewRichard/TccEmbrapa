@@ -2,7 +2,7 @@
   "expo": {
     "name": "Restaura Mata Atlantica",
     "slug": "restauraApp",
-    "version": "2.1.1",
+    "version": "2.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon1024.png",
     "userInterfaceStyle": "light",
@@ -24,7 +24,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.endrewrichard.restauraApp",
-      "versionCode": 2.1
+      "versionCode": 6
     },
     "web": {
       "favicon": "./assets/icon1024.png"

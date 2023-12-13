@@ -182,6 +182,11 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     backgroundColor: 'white',
+    width: 65, // Ajuste o tamanho do botão aumentando o valor de width
+    height: 65, // Ajuste o tamanho do botão aumentando o valor de height
+    borderRadius: 16, // Certifique-se de que a borda seja metade do valor da altura para manter um formato circular
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   searchContainer: {
     flexDirection: 'row',
