@@ -171,16 +171,16 @@ const SobreScreen = () => {
 
     <Text style = {{textAlignVertical: 'center', textAlign: "center"}}>{'\n'}
     <Text style = {styles.wordBold}>Embrapa Agrobiologia {'\n'}{'\n'}</Text> 
-    <Text style = {styles.wordBold}>Gustavo Ribeiro Xavier{'\n'} </Text> 
+    <Text style = {styles.wordBold}>Cristhiane Oliveira da Graça Amâncio{'\n'} </Text> 
     Chefe Geral da Embrapa Agrobiologia{'\n'}{'\n'}
 
-    <Text style = {styles.wordBold}>Maria Elizabeth Fernandes Correia{'\n'} </Text> 
+    <Text style = {styles.wordBold}>Cláudia Pozzi Jantália{'\n'} </Text> 
     Chefe Adjunta de Pesquisa e Desenvolvimento{'\n'}{'\n'}
 
     <Text style = {styles.wordBold}>Ana Cristina Siwert Garofolo{'\n'} </Text> 
     Chefe Adjunta de Transferencia de Tecnologia{'\n'}{'\n'}
 
-    <Text style = {styles.wordBold}>Joyce Aparecida Marques{'\n'} </Text> 
+    <Text style = {styles.wordBold}>Aline Augusta da Silva Teixeira{'\n'} </Text> 
     Chefe Adjunta de Administração{'\n'}{'\n'}{'\n'}{'\n'}
 
      </Text>
