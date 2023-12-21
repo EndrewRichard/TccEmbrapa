@@ -9,8 +9,10 @@ const TutorialScreen = () => {
 <Container>
             <Scroller>
            <Text><Text style = {styles.wordBold}>Restaura </Text>
-                 É um aplicativo movel que permite recuperar informações sobre espécies nativas da Mata Atlântica. Seu intuito é ser facilmente utilizado por qualquer pessoa.
-                 Ele foi concebido e organizado para ser utilizado por leigos ou especialistas em Agropecuaria. Esta aba apresenta uam breve explicação das funcoes contidas no mesmo.
+           Restaura É um aplicativo móvel que permite recuperar informações sobre espécies nativas da Mata Atlântica, 
+           e foi desenvolvido a partir de uma lista de espécies arbóreas nativas da Mata Atlântica elaborada por pesquisadores 
+           da Embrapa Agrobiologia. Seu intuito é ser facilmente utilizado. 
+           Ele foi concebido e organizado para ser utilizado por leigos ou especialistas em meio ambiente e agropecuária. 
                  {'\n'}{'\n'}
             </Text>
             <Text style = {styles.wordBold}>FUNÇÕES DO APP{'\n'}</Text>
@@ -18,19 +20,29 @@ const TutorialScreen = () => {
 
             <Text>{'\n'}
                  <Text style = {styles.wordBold}>CATALOGO:{'\n'}</Text>
-                 Exibe todas as expecies ja catalogadas, em ordem alfabetica e respeitando as especies ja  favoritadas, no topo da lista de especies tem um campo onde o usuario pode digitar e fazer buscas mais especificas.
-                  Faz buscas aproximadas elvando em consideração o nome popular ou a especie das plantas, aqui tambem é possivel ativar e desativar filtros para consultas mais especificas que consideram coisas como: Biomas, uso economico, ocorrencias e tipos de solos.
-                   O Usuario poderá explorar mais informaçoes da especie ao clicar no card que representa a mesma, além de poder salvar/favoritar para consultas posteriores ou compartilhalá por Whatsapp</Text>
+                 Exibe todas as espécies já catalogadas, em ordem alfabética, respeitando as espécies já favoritadas. 
+                 No topo da lista de espécies, há um campo onde o usuário pode digitar e fazer buscas mais específicas. 
+                 Faz buscas aproximadas levando em consideração o nome popular ou o nome científico das espécies arbóreas. 
+                 Aqui também é possível ativar e desativar filtros para consultas mais específicas que consideram 
+                 informações como estados do país onde as espécies ocorrem e em quais tipos de vegetação; informações 
+                 sobre a condição de drenagem do solo em que as espécies ocorrem preferencialmente, 
+                 bem como em que profundidade, textura e fertilidade do solo; características ecológicas e taxa de 
+                 crescimento das espécies; além de informações sobre possíveis usos e o grau de ameaça de extinção a que 
+                 as espécies estão submetidas. O usuário poderá explorar mais informações da espécie ao clicar no card que 
+                 a representa, além de poder salvar/favoritar a espécie para consultas posteriores ou compartilhar a 
+                 espécie por Whatsapp. </Text>
 
             <Text>{'\n'}
                <Text style = {styles.wordBold}>SOBRE: </Text>
-                Apresenta informações sobre o projeto, a equipe desenvolvedora a Intituição UFRRJ e a EMBRAPA.
-                Nela contem todos os nomes envolvidos no desenvolvimento do app, e os contatos do mesmo, assim como tem tambem contatos para as organizaçoes EMBRAPA e PET-SI.
+               Apresenta informações sobre o projeto, a equipe desenvolvedora a Instituição UFRRJ e a EMBRAPA AGROBIOLOGIA. 
+               Este item contém todos os nomes envolvidos no desenvolvimento do app e os respectivos contatos, 
+               assim como contém os contatos para as organizações EMBRAPA e PET-SI. 
                         </Text>
             <Text>{'\n'}
                <Text style = {styles.wordBold}>TUTORIAL: </Text>
                
-                Apresenta esse conteudo explicando as funçoes das abas do aplicativo. Ou seja, Explica e ensina ao usuario todas as funções do aplicativo.
+                Apresenta esse conteudo explicando as funçoes das abas do aplicativo. 
+                Ou seja, Explica e ensina ao usuario todas as funções do aplicativo.
                 {'\n'}{'\n'}</Text>
                 
 
