@@ -32,6 +32,13 @@ const TutorialScreen = () => {
                  a representa, além de poder salvar/favoritar a espécie para consultas posteriores ou compartilhar a 
                  espécie por Whatsapp. </Text>
 
+                 <Text>{'\n'}
+                 <Text style = {styles.wordBold}>CARD:{'\n'}</Text>
+                 Exibe os detalhes da especie e dispoem de um botão de download, que quando disponivel baixa o 
+                 PDF ao capitolo do livro Especies Arboreas Brasileiras, que contem mais detalhes e fotos sobre a especie.
+               
+                  </Text>
+
             <Text>{'\n'}
                <Text style = {styles.wordBold}>SOBRE: </Text>
                Apresenta informações sobre o projeto, a equipe desenvolvedora a Instituição UFRRJ e a EMBRAPA AGROBIOLOGIA. 
