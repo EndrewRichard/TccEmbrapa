@@ -34,8 +34,8 @@ const TutorialScreen = () => {
 
                  <Text>{'\n'}
                  <Text style = {styles.wordBold}>CARD:{'\n'}</Text>
-                 Exibe os detalhes da especie e dispoem de um botão de download, que quando disponivel baixa o 
-                 PDF ao capitolo do livro Especies Arboreas Brasileiras, que contem mais detalhes e fotos sobre a especie.
+                 Exibe os detalhes da espécie e dispõe de um botão de download. Quando disponível,
+                  o botão baixa o PDF do capítulo do livro 'Espécies Arbóreas Brasileiras', que contém mais detalhes e fotos sobre a espécie.
                
                   </Text>
 
