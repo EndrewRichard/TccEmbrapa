@@ -2,6 +2,16 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
+
+// ,
+//     "android": {
+//       "keystore": "./restaura-chave.jks",
+//       "keystoreAlias": "key0",
+//       "keystorePassword": "Mais1Senha.",
+//       "keyPassword": "Mais1Senha."
+//     }
+
+    
 const DetailsScreen = ({ route }) => {
   const { item } = route.params;
 
