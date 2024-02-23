@@ -18,11 +18,6 @@
       "supportsTablet": true
     },
     "android": {
-      "config": {
-        "googleSignIn": {
-          "certificateHash": "1A:46:B8:7B:54:94:5F:63:A7:75:CF:05:4A:BA:A8:FF:6F:8E:C9:61"
-        }
-      },
       "adaptiveIcon": {
         "permissions": ["WRITE_EXTERNAL_STORAGE", "READ_EXTERNAL_STORAGE"],
         "foregroundImage": "./assets/icon1024.png",
