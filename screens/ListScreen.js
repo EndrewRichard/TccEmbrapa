@@ -20,44 +20,44 @@ const ListScreen = ({ navigation }) => {
 
 
   const filterData = async () => {
-  const favorites = await getFavorites();
+    const favorites = await getFavorites();
 
-  const filteredItems = data.Dado.filter(
-    (item) =>
-      (item.ESPÉCIE && item.ESPÉCIE.toLowerCase().includes(searchText.toLowerCase())) ||
-      (item.NOME_VULGAR && item.NOME_VULGAR.toLowerCase().includes(searchText.toLowerCase()))
-  );
-
-
-  let filteredByFilters = [...filteredItems];
-
-  if (selectedFilters['TOL_SOMBRA']) {
-    filteredByFilters = filteredByFilters.filter(item => 
-      item['TOL_SOMBRA'].toLowerCase() === selectedFilters['TOL_SOMBRA'].toLowerCase()
+    const filteredItems = data.Dado.filter(
+      (item) =>
+        (item.ESPÉCIE && item.ESPÉCIE.toLowerCase().includes(searchText.toLowerCase())) ||
+        (item.NOME_VULGAR && item.NOME_VULGAR.toLowerCase().includes(searchText.toLowerCase()))
     );
-  }
-
-  if (selectedFilters['ESTRATEGIA_DISPERSAO']) {
-    filteredByFilters = filteredByFilters.filter(item => 
-      item['ESTRATEGIA_DISPERSAO'].toLowerCase() === selectedFilters['ESTRATEGIA_DISPERSAO'].toLowerCase()
-    );
-  }
-
-  if (selectedFilters['ESTRATEGIA_OCUPACAO']) {
-    filteredByFilters = filteredByFilters.filter(item => 
-      item['ESTRATEGIA_OCUPACAO'].toLowerCase() === selectedFilters['ESTRATEGIA_OCUPACAO'].toLowerCase()
-    );
-  }
 
 
-  filteredByFilters.sort((a, b) => {
-    const isAFavorite = favorites.includes(a.ESPÉCIE);
-    const isBFavorite = favorites.includes(b.ESPÉCIE);
-    return isBFavorite - isAFavorite;
-  });
+    let filteredByFilters = [...filteredItems];
 
-  setFilteredData(filteredByFilters);
-};
+    if (selectedFilters['TOL_SOMBRA']) {
+      filteredByFilters = filteredByFilters.filter(item =>
+        item['TOL_SOMBRA'].toLowerCase() === selectedFilters['TOL_SOMBRA'].toLowerCase()
+      );
+    }
+
+    if (selectedFilters['ESTRATEGIA_DISPERSAO']) {
+      filteredByFilters = filteredByFilters.filter(item =>
+        item['ESTRATEGIA_DISPERSAO'].toLowerCase() === selectedFilters['ESTRATEGIA_DISPERSAO'].toLowerCase()
+      );
+    }
+
+    if (selectedFilters['ESTRATEGIA_OCUPACAO']) {
+      filteredByFilters = filteredByFilters.filter(item =>
+        item['ESTRATEGIA_OCUPACAO'].toLowerCase() === selectedFilters['ESTRATEGIA_OCUPACAO'].toLowerCase()
+      );
+    }
+
+
+    filteredByFilters.sort((a, b) => {
+      const isAFavorite = favorites.includes(a.ESPÉCIE);
+      const isBFavorite = favorites.includes(b.ESPÉCIE);
+      return isBFavorite - isAFavorite;
+    });
+
+    setFilteredData(filteredByFilters);
+  };
 
   const getFavorites = async () => {
     try {
@@ -86,43 +86,43 @@ const ListScreen = ({ navigation }) => {
     setShowFilterModal(!showFilterModal);
 
   };
-const handleToggleFilter = (filterKey) => {
-  setSelectedFilters((prevFilters) => {
-    if (filterKey === 'ESTRATEGIA_OCUPACAO') {
-      const occupationOptions = ['diversidade', 'recobrimento', ''];
-      const currentIndex = occupationOptions.indexOf(prevFilters[filterKey]);
-      const newValue = occupationOptions[(currentIndex + 1) % occupationOptions.length];
-      return {
-        ...prevFilters,
-        [filterKey]: newValue,
-      };
-    }
+  const handleToggleFilter = (filterKey) => {
+    setSelectedFilters((prevFilters) => {
+      if (filterKey === 'ESTRATEGIA_OCUPACAO') {
+        const occupationOptions = ['diversidade', 'recobrimento', ''];
+        const currentIndex = occupationOptions.indexOf(prevFilters[filterKey]);
+        const newValue = occupationOptions[(currentIndex + 1) % occupationOptions.length];
+        return {
+          ...prevFilters,
+          [filterKey]: newValue,
+        };
+      }
 
-    if (filterKey === 'TOL_SOMBRA') {
-      const shadeOptions = ['sim', 'não', 'indiferente', ''];
-      const currentIndex = shadeOptions.indexOf(prevFilters[filterKey]);
-      const newValue = shadeOptions[(currentIndex + 1) % shadeOptions.length];
-      return {
-        ...prevFilters,
-        [filterKey]: newValue,
-      };
-    }
+      if (filterKey === 'TOL_SOMBRA') {
+        const shadeOptions = ['sim', 'não', 'indiferente', ''];
+        const currentIndex = shadeOptions.indexOf(prevFilters[filterKey]);
+        const newValue = shadeOptions[(currentIndex + 1) % shadeOptions.length];
+        return {
+          ...prevFilters,
+          [filterKey]: newValue,
+        };
+      }
 
-    if (filterKey === 'ESTRATEGIA_DISPERSAO') {
-      const dispersaoOptions = ['autocórica', 'zoocórica', 'anemocórica', 'endozoocórica', 'hidrocórica', ''];
-      const currentIndex = dispersaoOptions.indexOf(prevFilters[filterKey]);
-      const newValue = dispersaoOptions[(currentIndex + 1) % dispersaoOptions.length];
-      return {
-        ...prevFilters,
-        [filterKey]: newValue,
-      };
-    }
+      if (filterKey === 'ESTRATEGIA_DISPERSAO') {
+        const dispersaoOptions = ['autocórica', 'zoocórica', 'anemocórica', 'endozoocórica', 'hidrocórica', ''];
+        const currentIndex = dispersaoOptions.indexOf(prevFilters[filterKey]);
+        const newValue = dispersaoOptions[(currentIndex + 1) % dispersaoOptions.length];
+        return {
+          ...prevFilters,
+          [filterKey]: newValue,
+        };
+      }
 
-    // Outras chaves podem ser tratadas aqui, se necessário
+      // Outras chaves podem ser tratadas aqui, se necessário
 
-    return prevFilters; // Retorna os filtros inalterados para outras chaves
-  });
-};
+      return prevFilters; // Retorna os filtros inalterados para outras chaves
+    });
+  };
 
   const handleClearFilters = () => {
     setSelectedFilters({});
@@ -166,7 +166,7 @@ const handleToggleFilter = (filterKey) => {
           handleToggleFilterModal();
           clearFilters(); // Chame a função clearFilters aqui
         }}
-/>
+      />
     </View>
   );
 };

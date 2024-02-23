@@ -35,7 +35,7 @@ const DetailsScreen = ({ route, navigation }) => {
 
   ];
 
- 
+
 
 
   // Função para filtrar os estados que contêm valor 1 no JSON
@@ -91,21 +91,21 @@ const DetailsScreen = ({ route, navigation }) => {
   const threatInfo = getThreatInfo(item.AMEACADO);
 
   //função para pegar cor
-    const getThreatColor = (threatLevel) => {
-      const threatInfo = threatLevels.find((info) => info.abbreviation === threatLevel);
-      return threatInfo ? threatInfo.color : '#B0BEC5'; // Cor padrão se não encontrar
-    };
+  const getThreatColor = (threatLevel) => {
+    const threatInfo = threatLevels.find((info) => info.abbreviation === threatLevel);
+    return threatInfo ? threatInfo.color : '#B0BEC5'; // Cor padrão se não encontrar
+  };
 
-  
-    // Função para abrir o modal de ameaça
-    const openThreatInfoModal = () => {
-      setThreatModalVisible(true);
-    };
-  
-    // Função para fechar o modal de ameaça
-    const closeThreatInfoModal = () => {
-      setThreatModalVisible(false);
-    };
+
+  // Função para abrir o modal de ameaça
+  const openThreatInfoModal = () => {
+    setThreatModalVisible(true);
+  };
+
+  // Função para fechar o modal de ameaça
+  const closeThreatInfoModal = () => {
+    setThreatModalVisible(false);
+  };
 
   const [mudasSementesOpen, setMudasSementesOpen] = useState(false);
   const [ondeOcorreOpen, setOndeOcorreOpen] = useState(false);
@@ -113,70 +113,70 @@ const DetailsScreen = ({ route, navigation }) => {
   const [relacaoAmbienteOpen, setRelacaoAmbienteOpen] = useState(false);
   const [ciclosOpen, setCiclosOpen] = useState(false);
 
-console.log('Valor de item.AMEACADO:', item.AMEACADO);
-const threatColor = getThreatColor(item.AMEACADO);
-console.log('Cor do nível de extinção:', threatColor);
-  
+  console.log('Valor de item.AMEACADO:', item.AMEACADO);
+  const threatColor = getThreatColor(item.AMEACADO);
+  console.log('Cor do nível de extinção:', threatColor);
 
-  
+
+
 
   return (
     <View style={styles.container}>
       <ScrollView>
         {/* funçoes de voltar, botao de downlaod e botao de informaçoes
         sobre a extinção, além da exibição da especie e autor da mesma*/}
-      <TouchableOpacity
+        <TouchableOpacity
           style={styles.goBackContainer}
           onPress={() => navigation.goBack()}
         >
           <Ionicons name="arrow-back" size={30} color="white" />
-      </TouchableOpacity>
+        </TouchableOpacity>
         <View style={styles.contentContainer}>
           <View style={styles.titleContainer}>
             <Text style={styles.title}>{item.ESPÉCIE}</Text>
 
             {item.LINK && (
-            <View>
-              <TouchableOpacity onPress={() => handleOpenURL(item.LINK)}>
-                {downloadStatus ? (
-                  downloadStatus === 'Fazendo download...' ? (
-                    <ActivityIndicator size="small" color="#00FF00" />
+              <View>
+                <TouchableOpacity onPress={() => handleOpenURL(item.LINK)}>
+                  {downloadStatus ? (
+                    downloadStatus === 'Fazendo download...' ? (
+                      <ActivityIndicator size="small" color="#00FF00" />
+                    ) : (
+                      <Ionicons name="arrow-down-circle" size={30} color="#006122" />
+                    )
                   ) : (
                     <Ionicons name="arrow-down-circle" size={30} color="#006122" />
-                  )
-                ) : (
-                  <Ionicons name="arrow-down-circle" size={30} color="#006122" />
-                )}
-              </TouchableOpacity>
+                  )}
+                </TouchableOpacity>
 
-            </View>
-          )}
+              </View>
+            )}
 
 
-        </View>
-        <View style={styles.titleContainer}>
-        <Text style={styles.autor}>{item.AUTOR}</Text>
+          </View>
+          <View style={styles.titleContainer}>
+            <Text style={styles.autor}>{item.AUTOR}</Text>
 
 
-        {/* mudar cor da bola e do texto em ameaça de extinção (é igual no modal)*/}
+            {/* mudar cor da bola e do texto em ameaça de extinção (é igual no modal)*/}
 
-        <TouchableOpacity
-            style={[
-              styles.threatCircle,
-              {
-                backgroundColor: threatInfo.color,
-              },
-            ]}
-            onPress={() => openThreatInfoModal(item.AMEACADO)}
-          >
-            <Text style={[styles.threatText, { color: threatInfo.textColor }]}>
-              {threatInfo.abbreviation}
-            </Text>
-          </TouchableOpacity>
-        </View>
+            <TouchableOpacity
+              style={[
+                styles.threatCircle,
+                {
+                  backgroundColor: threatInfo.color,
+                },
+              ]}
+              onPress={() => openThreatInfoModal(item.AMEACADO)}
+            >
+              <Text style={[styles.threatText, { color: threatInfo.textColor }]}>
+                {threatInfo.abbreviation}
+              </Text>
+            </TouchableOpacity>
+          </View>
 
-        
-          
+
+
 
 
           <View style={styles.infoContainer}>
@@ -256,9 +256,9 @@ console.log('Cor do nível de extinção:', threatColor);
                 <Text style={styles.attributeNameBlack}>Peso fresco/1000 sementes (g):</Text> {item.PESO_FRESCO}
               </Text>
 
-              
+
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameGreen}>{'\n'}CONDIÇÕES DE ARMAZENAMENTO</Text> 
+                <Text style={styles.attributeNameGreen}>{'\n'}CONDIÇÕES DE ARMAZENAMENTO</Text>
               </Text>
 
               <Text style={styles.moreInfoTextBlack}>
@@ -285,7 +285,7 @@ console.log('Cor do nível de extinção:', threatColor);
               </Text>
 
 
-              
+
             </View>
           )}
 
@@ -312,31 +312,31 @@ console.log('Cor do nível de extinção:', threatColor);
                 {item.FLORESTA_ESTACIONAL_DECIDUAL === 1 ? ' Floresta Estacional Decidual; ' : ''}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Sistema Edafico de primeira ocupação:</Text> 
+                <Text style={styles.attributeNameBlack}>Sistema Edafico de primeira ocupação:</Text>
                 {item.SISTEMA_EDAFICO_PRIMEIRA_OCUPACAO === 1 ? ' Sim; ' : 'Não'}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Influencia marinha:</Text> 
+                <Text style={styles.attributeNameBlack}>Influencia marinha:</Text>
                 {item.VEGETACAO_INFLUENCIA_MARINHA === 1 ? ' Sim; ' : 'Não'}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Influencia fluviomarinha:</Text> 
+                <Text style={styles.attributeNameBlack}>Influencia fluviomarinha:</Text>
                 {item.VEGETACAO_INFLUENCIA_FLUVIOMARINHA === 1 ? ' Sim; ' : 'Não'}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Influencia fluvial:</Text> 
+                <Text style={styles.attributeNameBlack}>Influencia fluvial:</Text>
                 {item.VEGETACAO_INFLUENCIA_FLUVIAL === 1 ? ' Sim; ' : 'Não'}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Campos rupestres:</Text> 
+                <Text style={styles.attributeNameBlack}>Campos rupestres:</Text>
                 {item.CAMPOS_RUPESTRES === 1 ? ' Sim; ' : 'Não'}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Sistemas de áreas sem vegetação:</Text> 
+                <Text style={styles.attributeNameBlack}>Sistemas de áreas sem vegetação:</Text>
                 {item.SASV === 1 ? ' Sim; ' : 'Não'}
               </Text>
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameBlack}>Areas antropizadas:</Text> 
+                <Text style={styles.attributeNameBlack}>Areas antropizadas:</Text>
                 {item.AREAS_ANTROPIZADAS === 1 ? ' Sim; ' : 'Não'}
               </Text>
             </View>
@@ -380,8 +380,8 @@ console.log('Cor do nível de extinção:', threatColor);
                 <Text style={styles.attributeNameBlack}>Características observadas:</Text> {item.OBSERVACAO_SOLO}
               </Text>
             </View>
-          )} 
-            {/* // Seção Relação com Ambiente */}
+          )}
+          {/* // Seção Relação com Ambiente */}
           <TouchableOpacity
             style={styles.sectionTitleContainer}
             onPress={() => setRelacaoAmbienteOpen(!relacaoAmbienteOpen)}
@@ -406,7 +406,7 @@ console.log('Cor do nível de extinção:', threatColor);
               </Text>
 
               <Text style={styles.moreInfoTextBlack}>
-                <Text style={styles.attributeNameGreen}>{'\n'}ATRAÇÃO DA FAUNA</Text> 
+                <Text style={styles.attributeNameGreen}>{'\n'}ATRAÇÃO DA FAUNA</Text>
               </Text>
 
               <Text style={styles.moreInfoTextBlack}>
@@ -418,24 +418,24 @@ console.log('Cor do nível de extinção:', threatColor);
               <Text style={styles.moreInfoTextBlack}>
                 <Text style={styles.attributeNameBlack}>Estratégia de dispersão:</Text> {item.ESTRATEGIA_DISPERSAO}
               </Text>
-            
+
             </View>
           )}
 
-            {/* // Seção Relação ciclos  */}
-        <TouchableOpacity
-          style={styles.sectionTitleContainer}
-          onPress={() => setCiclosOpen(!ciclosOpen)}
-        >
-          <Text style={styles.sectionTitle}>Ciclos</Text>
-          <Ionicons
-            name={ciclosOpen ? 'chevron-down' : 'chevron-forward'}
-            size={24}
-            color="#006122"
-          />
-        </TouchableOpacity>
-        {ciclosOpen && (
-          <View style={styles.sectionContent}>
+          {/* // Seção Relação ciclos  */}
+          <TouchableOpacity
+            style={styles.sectionTitleContainer}
+            onPress={() => setCiclosOpen(!ciclosOpen)}
+          >
+            <Text style={styles.sectionTitle}>Ciclos</Text>
+            <Ionicons
+              name={ciclosOpen ? 'chevron-down' : 'chevron-forward'}
+              size={24}
+              color="#006122"
+            />
+          </TouchableOpacity>
+          {ciclosOpen && (
+            <View style={styles.sectionContent}>
               <Text style={styles.moreInfoTextBlack}>
                 <Text style={styles.attributeNameBlack}>Periodo de floração:</Text> {item.PERIODO_FLORACAO}
               </Text>
@@ -445,22 +445,22 @@ console.log('Cor do nível de extinção:', threatColor);
               <Text style={styles.moreInfoTextBlack}>
                 <Text style={styles.attributeNameBlack}>Periodo de coleta de sementes no campo:</Text> {item.PERIODO_COLETA_SEMENTE}
               </Text>
-                </View>
-        )}
+            </View>
+          )}
 
 
           <View style={styles.referencesContainer}>
-          <Text style={styles.referencesTitle}>Referências:</Text>
-          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA}</Text>
-          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA1}</Text>
-          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA2}</Text>
-          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA3}</Text>
-          <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA4}</Text>
+            <Text style={styles.referencesTitle}>Referências:</Text>
+            <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA}</Text>
+            <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA1}</Text>
+            <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA2}</Text>
+            <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA3}</Text>
+            <Text style={styles.referenceText}><Text style={styles.attributeNameBlack}></Text>{item.REFERENCIA4}</Text>
 
 
           </View>
 
-        
+
         </View>
       </ScrollView>
 
@@ -496,7 +496,7 @@ console.log('Cor do nível de extinção:', threatColor);
 
 
 
-      
+
     </View>
   );
 };
@@ -524,7 +524,7 @@ const styles = StyleSheet.create({
     marginTop: 0,
 
   },
-  
+
   threatText: {
     color: 'white',
     fontWeight: 'bold',
@@ -586,7 +586,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     marginBottom: 8,
-  },  
+  },
   moreInfoText: {
     fontSize: 16,
     color: 'white',
@@ -635,7 +635,7 @@ const styles = StyleSheet.create({
     padding: 16,
     borderRadius: 8,
   },
-  
+
   goBackContainer: {
     position: 'absolute',
     top: 16,
@@ -669,7 +669,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginRight: 16, // Ajuste conforme necessário
   },
-  
+
   threatModalAbbreviation: {
     color: 'black',
     fontSize: 16,
