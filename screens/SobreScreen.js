@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components/native';
 import { View, Text, Image, StyleSheet, Linking } from 'react-native'
 
@@ -32,7 +31,7 @@ const SobreScreen = () => {
        especies vegetais que podem ser utilizadas em projetos de restauração florestal e reflorestamento.
     </Text>
     <Text>{'\n'}
-       A primeira versão do <Text style = {styles.wordBold}>Restaura </Text> foi totalmente concebido, projetado e desenvolvido por uma euqipe multidisciplinar 
+       A primeira versão do <Text style = {styles.wordBold}>Restaura </Text> foi totalmente concebida, projetada e desenvolvida por uma equipe multidisciplinar 
        de alunos da <Text style = {styles.wordBold}>Universidade Federal Rural do Rio de Janeiro (UFRRJ) </Text>
        durante as etapas da hackathon Acadêmica da Embrapa. Os desenvolvedores sao membros dos cursos de Sistemas de Informação e Agronomia da universidade e membros do programa
        {' '} 
@@ -253,40 +252,22 @@ export const HeaderTitle = styled.Text`
 `;
 
 export const styles = StyleSheet.create ({
-   container: {
-      alignItems: 'center',
-      marginTop: 100,
-      padding: 20
-   },
    moreInfoContainer: {
     marginBottom: 16,
     backgroundColor: '#006122',
     padding: 16,
     borderRadius: 8,
   },
-   text: {
-      color: '#41cdf4',
-   },
-   capitalLetter: {
-      color: 'black',
-      fontSize: 20
-   },
+
    wordBold: {
       fontWeight: 'bold',
       color: 'black'
    },
-   italicText: {
-      color: 'black',
-      fontStyle: 'italic'
-   },
+
    hyperlinkStyle: {
       color: '#002B7F',
-    },
-   textShadow: {
-      textShadowColor: 'black',
-      textShadowOffset: { width: 2, height: 2 },
-      textShadowRadius : 5
-   }
+    }
+
 })
 
 export default SobreScreen;

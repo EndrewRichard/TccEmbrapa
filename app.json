@@ -28,7 +28,7 @@
         "foregroundImage": "./assets/icon1024.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.endrewrichard.restauraApp",
+      "package": "br.embrapa.restaura",
       "versionCode": 1
     },
     "web": {

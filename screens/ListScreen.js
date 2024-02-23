@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Modal, FlatList } from 'react-native';
+import { useState, useEffect } from 'react';
+import { View, TextInput, StyleSheet, Modal, FlatList } from 'react-native';
 import data from '../data/grad.json';
 import FilterDrawer from './FilterDrawer';
 import ItemList from '../components/ItemList';

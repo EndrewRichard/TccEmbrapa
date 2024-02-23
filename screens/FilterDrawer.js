@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 
 const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }) => {
@@ -101,7 +101,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
 
         { title: 'Velocidade Crescimento', filters: filters.slice(52, 55) },
         { title: 'Uso Econômico', filters: filters.slice(55, 74) },
-        { title: 'Ameaçado de Extinção', filters: filters.slice(74) },
+        { title: 'Ameaçado de Extinção', filters: filters.slice(74, 75) },
         
       ];
     
@@ -171,7 +171,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
 
 
       return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
           <View style={styles.header}>
             <Text style={styles.headerText}></Text>
             <TouchableOpacity onPress={onClose} style={styles.backButtonContainer}>
@@ -250,7 +250,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
         
       ))}
 
-    </View>
+    </ScrollView>
   );
 }
 
@@ -304,9 +304,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
 
     },
-    filterList: {
-      flex: 1,
-    },
     card: {
       backgroundColor: 'white',
       marginBottom: 16,
@@ -316,15 +313,6 @@ const styles = StyleSheet.create({
       borderColor: '#006122',
       
     },
-    
-  checkboxContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  checkboxLabel: {
-    marginLeft: 8,
-  },
-
     cardExpanded: {
         borderWidth: 1,
       borderTopColor: '#006122',

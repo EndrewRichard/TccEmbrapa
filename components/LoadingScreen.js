@@ -1,7 +1,4 @@
-import React, { useEffect } from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-
 const LoadingScreen = () => {
   // Use o hook useEffect para simular um carregamento e navegar para a próxima tela após algum tempo
 
@@ -41,11 +38,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#006122',
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  image: {
-    width: 100,
-    height: 100,
-    marginVertical: 20,
   },
   text: {
     fontSize: 18,

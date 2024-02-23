@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components/native';
 import { View, Text, Image, StyleSheet } from 'react-native'
 
@@ -106,34 +105,11 @@ export const HeaderTitle = styled.Text`
 `;
 
 export const styles = StyleSheet.create ({
-   container: {
-      alignItems: 'center',
-      marginTop: 100,
-      padding: 20
-   },
-   text: {
-      color: '#41cdf4',
-   },
-   capitalLetter: {
-      color: 'black',
-      fontSize: 20
-   },
    wordBold: {
       fontWeight: 'bold',
       color: 'black'
    },
-   italicText: {
-      color: 'black',
-      fontStyle: 'italic'
-   },
-   hyperlinkStyle: {
-      color: '#002B7F',
-    },
-   textShadow: {
-      textShadowColor: 'black',
-      textShadowOffset: { width: 2, height: 2 },
-      textShadowRadius : 5
-   }
+
 })
 
 export default TutorialScreen;

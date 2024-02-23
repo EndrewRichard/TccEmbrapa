@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import {
   View,
@@ -618,19 +618,9 @@ const styles = StyleSheet.create({
     color: '#006122', // Cor do título em preto
     marginBottom: 8,
   },
-  referenceBox: {
-    backgroundColor: 'black',
-    color: 'black',
-    padding: 8,
-    borderRadius: 8,
-    marginBottom: 8,
-  },
   referenceText: {
     fontSize: 16,
     color: 'gray', // Cor do texto em cinza
-  },
-  linkIconContainer: {
-    marginLeft: 8,
   },
   sectionTitleContainer: {
     flexDirection: 'row',

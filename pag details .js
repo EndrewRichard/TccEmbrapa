@@ -1,15 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 
-// ,
-//     "android": {
-//       "keystore": "./restaura-chave.jks",
-//       "keystoreAlias": "key0",
-//       "keystorePassword": "Mais1Senha.",
-//       "keyPassword": "Mais1Senha."
-//     }
 
     
 const DetailsScreen = ({ route }) => {
@@ -164,6 +157,8 @@ const DetailsScreen = ({ route }) => {
               <Text style={styles.moreInfoTextBlack}>
                 <Text style={styles.attributeNameBlack}>Caracteristicas observadas:</Text> {item.CONDICOES_ARMAZENAMENTO}
               </Text>
+
+
 
               <Text style={styles.moreInfoTextBlack}>
                 <Text style={styles.attributeNameBlack}>Prazo para armazenamento:</Text> {item.PRAZO_ARMAZENAMENTO}
@@ -368,6 +363,17 @@ const DetailsScreen = ({ route }) => {
 };
 
 const styles = StyleSheet.create({
+
+  // ,
+//     "android": {
+//       "keystore": "./restaura-chave.jks",
+//       "keystoreAlias": "restaura",
+//       "keystorePassword": "Mais1Senha.",
+//       "keyPassword": "Mais1Senha."
+//     }
+
+
+
   container: {
     flex: 1,
     backgroundColor: '#006122',
@@ -465,13 +471,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     color: '#006122', // Cor do título em preto
-    marginBottom: 8,
-  },
-  referenceBox: {
-    backgroundColor: 'black',
-    color: 'black',
-    padding: 8,
-    borderRadius: 8,
     marginBottom: 8,
   },
   referenceText: {

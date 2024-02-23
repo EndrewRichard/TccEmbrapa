@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -104,19 +104,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 14,
     color: 'white',
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: 'bold', // Aplica o estilo negrito
-    color: '#006122',
-    marginBottom: 0,
-  },
-  autor: {
-    fontSize: 28,
-    fontStyle: 'italic', // Aplica o estilo itálico
-    fontWeight: 'bold', // Aplica o estilo negrito
-    color: '#006122',
-    marginBottom: 0,
   },
 });
 
