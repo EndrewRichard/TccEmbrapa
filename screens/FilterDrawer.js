@@ -112,6 +112,9 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
   const [tolSombraValue, setTolSombraValue] = useState(selectedFilters['TOL_SOMBRA'] || null);
   const [OcupValue, setOcupValue] = useState(selectedFilters['ESTRATEGIA_OCUPACAO'] || null);
   const [DispValue, setDispValue] = useState(selectedFilters['ESTRATEGIA_DISPERSAO'] || null);
+  const [AmeacadoValue, setAmeacadoValue] = useState(selectedFilters['AMEACADO'] || null);
+
+
 
 
 
@@ -128,9 +131,15 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
   };
 
 
+
   const handleSelectDispersao = () => {
     setDispValue('');
     onToggleFilter('ESTRATEGIA_DISPERSAO', '');
+  };
+
+  const handleSelectAmeacado = () => {
+    setDispValue('');
+    onToggleFilter('AMEACADO', '');
   };
   // console.log('Filtros Selecionados:', selectedFilters);
 
@@ -175,10 +184,10 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
       <View style={styles.header}>
         <Text style={styles.headerText}></Text>
         <TouchableOpacity onPress={onClose} style={styles.backButtonContainer}>
-          <Text style={styles.closeButtonText}>Voltar</Text>
+          <Text style={styles.closeButtonText}>Filtrar</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={handleClearFilters}>
-          <Text style={styles.clearFiltersButton}>Limpar Filtros</Text>
+          <Text style={styles.clearFiltersButton}>Voltar</Text>
         </TouchableOpacity>
       </View>
 
@@ -240,6 +249,19 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
                   <Text style={styles.filterLabel}>Estratégia de Disperção: </Text>
                   <Text style={styles.selectedFilter}>
                     {selectedFilters['ESTRATEGIA_DISPERSAO'] || 'Selecione uma opção'}
+                  </Text>
+                </View>
+              </TouchableOpacity>
+            </View>
+          )}
+
+          {groupIndex === 9 && expandedGroupIndex === groupIndex && (
+            <View style={styles.ecologicas}><Text>{'\n'}</Text>
+              <TouchableOpacity onPress={handleSelectAmeacado}>
+                <View style={styles.filterRow}>
+                  <Text style={styles.filterLabel}>Nivel extinção: </Text>
+                  <Text style={styles.selectedFilter}>
+                    {selectedFilters['AMEACADO'] || 'Selecione uma opção'}
                   </Text>
                 </View>
               </TouchableOpacity>

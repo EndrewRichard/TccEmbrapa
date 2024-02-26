@@ -16,11 +16,9 @@ const SobreScreen = () => {
                 <Text>{'\n'}</Text>
 
                 <Text><Text style={styles.wordBold}>Restaura </Text>
-                    É um aplicativo movel que permite recuperar informações sobre espécies nativas da Mata Atlântica,
-                    e foi desenvolvido a partir de uma lista de espécies arbóreas nativas da Mata Atlântica elaborada por pesquisadores da Embrapa Agrobiologia.
-                    Seu intuito é facilmente ser utilizado.
-                    Ele foi concebido e organizado para ser utilizado por leigos ou especialistas em meio ambiente e agropecuária.
-                    .
+                    é um aplicativo móvel que permite recuperar informações sobre espécies nativas da Mata Atlântica,
+                    e foi desenvolvido a partir de uma lista de espécies arbóreas nativas elaborada por pesquisadores da Embrapa Agrobiologia.
+                    Ele foi concebido e organizado para ser utilizado facilmente por leigos ou especialistas em meio ambiente e agropecuária.
                 </Text>
                 <Text>{'\n'}
                     As informações fornecidas pelo <Text style={styles.wordBold}>Restaura </Text> são públicas e podem facilmente
@@ -28,12 +26,12 @@ const SobreScreen = () => {
                 </Text>
                 <Text>{'\n'}
                     O <Text style={styles.wordBold}>Restaura </Text> tem como objetivo facilitar a difusão de informações sobre as
-                    especies vegetais que podem ser utilizadas em projetos de restauração florestal e reflorestamento.
+                    espécies vegetais que podem ser utilizadas em projetos de restauração florestal e reflorestamento.
                 </Text>
                 <Text>{'\n'}
                     A primeira versão do <Text style={styles.wordBold}>Restaura </Text> foi totalmente concebida, projetada e desenvolvida por uma equipe multidisciplinar
                     de alunos da <Text style={styles.wordBold}>Universidade Federal Rural do Rio de Janeiro (UFRRJ) </Text>
-                    durante as etapas da hackathon Acadêmica da Embrapa. Os desenvolvedores sao membros dos cursos de Sistemas de Informação e Agronomia da universidade e membros do programa
+                    durante as etapas da hackathon Acadêmica da Embrapa. Os desenvolvedores são membros dos cursos de Sistemas de Informação e Agronomia da universidade e membros do programa
                     {' '}
                     <Text
                         style={styles.hyperlinkStyle}
@@ -50,7 +48,7 @@ const SobreScreen = () => {
                     {'\n'}{'\n'}
 
                     A Equipe de desenvolvimento levava o titulo de <Text style={styles.wordBold}>Döbereiner</Text>, uma homenagem a grande pesquisadora <Text style={styles.wordBold}>Johanna Döbereiner</Text> , que iniciou um programa de pesquisas
-                    sobre aspectos limitantes da fixação biologia de nitrogenio (FBN), tendo seu nome presente na lista de indicaçoes do premio Nobel.{'\n'}
+                    sobre aspectos limitantes da fixação biologia de nitrogênio (FBN), tendo seu nome presente na lista de indicações do prêmio Nobel.{'\n'}
                 </Text>
 
                 <View style={styles.moreInfoContainer}><Text style={{ textAlignVertical: 'center', textAlign: "center", color: "white" }}>
@@ -176,7 +174,7 @@ const SobreScreen = () => {
                     <Text style={styles.wordBold}>Cláudia Pozzi Jantália{'\n'} </Text>
                     Chefe Adjunta de Pesquisa e Desenvolvimento{'\n'}{'\n'}
 
-                    <Text style={styles.wordBold}>Ana Cristina Siwert Garofolo{'\n'} </Text>
+                    <Text style={styles.wordBold}>Ana Cristina Siewert Garofolo{'\n'} </Text>
                     Chefe Adjunta de Transferencia de Tecnologia{'\n'}{'\n'}
 
                     <Text style={styles.wordBold}>Aline Augusta da Silva Teixeira{'\n'} </Text>
@@ -188,7 +186,7 @@ const SobreScreen = () => {
 
 
                 <Text>{'\n'}{'\n'}Embrapa Agrobiologia - BR 465, km7, Seropédica, RJ {'\n'}
-                    Tel:
+                    Tel: 
                     <Text
                         style={styles.hyperlinkStyle}
                         onPress={() => {
@@ -198,7 +196,7 @@ const SobreScreen = () => {
                     </Text>
                     / Fax: (21) 2682-1230 {'\n'}
                     CEP: 23891-000{'\n'}
-                    SITE:
+                    SITE: 
                     <Text
                         style={styles.hyperlinkStyle}
                         onPress={() => {
@@ -206,7 +204,7 @@ const SobreScreen = () => {
                         }}>
                         www.embrapa.br/agrobiologia
                     </Text> {'\n'}
-                    SAC:
+                    SAC: 
                     <Text
                         style={styles.hyperlinkStyle}
                         onPress={() => {

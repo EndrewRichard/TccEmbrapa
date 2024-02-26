@@ -6,13 +6,12 @@ function TutorialScreen() {
     <Container>
       <Scroller>
         <Text>
-          <Text style={styles.wordBold}>Restaura </Text>
-          Restaura É um aplicativo móvel que permite recuperar informações sobre
-          espécies nativas da Mata Atlântica, e foi desenvolvido a partir de uma
-          lista de espécies arbóreas nativas da Mata Atlântica elaborada por
-          pesquisadores da Embrapa Agrobiologia. Seu intuito é ser facilmente
-          utilizado. Ele foi concebido e organizado para ser utilizado por
-          leigos ou especialistas em meio ambiente e agropecuária.
+          <Text><Text style={styles.wordBold}>Restaura </Text>
+            é um aplicativo móvel que permite recuperar informações sobre espécies nativas da 
+            Mata Atlântica, e foi desenvolvido a partir de uma lista de espécies arbóreas nativas 
+            elaborada por pesquisadores da Embrapa Agrobiologia. Ele foi concebido e organizado 
+            para ser utilizado facilmente por leigos ou especialistas em meio ambiente e agropecuária.
+          </Text>
           {'\n'}
           {'\n'}
         </Text>
@@ -20,7 +19,7 @@ function TutorialScreen() {
 
         <Text>
           {'\n'}
-          <Text style={styles.wordBold}>CATALOGO:{'\n'}</Text>
+          <Text style={styles.wordBold}>CATÁLOGO:</Text>
           Exibe todas as espécies já catalogadas, em ordem alfabética,
           respeitando as espécies já favoritadas. No topo da lista de espécies,
           há um campo onde o usuário pode digitar e fazer buscas mais
@@ -41,26 +40,28 @@ function TutorialScreen() {
 
         <Text>
           {'\n'}
-          <Text style={styles.wordBold}>CARD:{'\n'}</Text>
-          Exibe os detalhes da espécie e dispõe de um botão de download. Quando
-          disponível, o botão baixa o PDF do capítulo do livro 'Espécies
-          Arbóreas Brasileiras', que contém mais detalhes e fotos sobre a
-          espécie.
+          <Text style={styles.wordBold}>TUTORIAL: </Text>
+          Apresenta esse conteúdo explicando as funções das abas do aplicativo.
+          Ou seja, explica e ensina ao usuário todas as funções do aplicativo.
         </Text>
 
         <Text>
           {'\n'}
           <Text style={styles.wordBold}>SOBRE: </Text>
           Apresenta informações sobre o projeto, a equipe desenvolvedora a
-          Instituição UFRRJ e a EMBRAPA AGROBIOLOGIA. Este item contém todos os
-          nomes envolvidos no desenvolvimento do app e os respectivos contatos,
+          Instituição UFRRJ e a Embrapa Agrobiologia. Este item contém todos os
+          nomes dos envolvidos no desenvolvimento do app e os respectivos contatos,
           assim como contém os contatos para as organizações EMBRAPA e PET-SI.
         </Text>
+
+
         <Text>
           {'\n'}
-          <Text style={styles.wordBold}>TUTORIAL: </Text>
-          Apresenta esse conteudo explicando as funçoes das abas do aplicativo.
-          Ou seja, Explica e ensina ao usuario todas as funções do aplicativo.
+          <Text style={styles.wordBold}>CARD:</Text>
+          Exibe os detalhes da espécie e dispõe de um botão de download. Quando
+          disponível, o botão baixa o PDF do capítulo do livro 'Espécies
+          Arbóreas Brasileiras', que contém mais detalhes e fotos sobre a
+          espécie.
           {'\n'}
           {'\n'}
         </Text>

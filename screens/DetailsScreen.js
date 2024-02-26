@@ -30,7 +30,6 @@ const DetailsScreen = ({ route, navigation }) => {
     { abbreviation: 'LC', description: 'Baixo risco', color: '#027568', textColor: 'white' },
     { abbreviation: 'DD', description: 'Deficiente de dados', color: '#D0D4D7', textColor: 'white' },
 
-
     { abbreviation: 'NE', description: 'Não avaliada', color: 'white', textColor: 'black' },
 
   ];
@@ -62,7 +61,7 @@ const DetailsScreen = ({ route, navigation }) => {
 
 
   // Função para abrir o link em um navegador externo ou WebView (a ser implementada) (atualmente baixando pdf)
-  const handleOpenURL = (url) => {
+  const openURLInBrowser = (url) => {
     Linking.openURL(url)
       .then(() => {
         console.log('Link aberto no navegador:', url);
@@ -70,6 +69,32 @@ const DetailsScreen = ({ route, navigation }) => {
       .catch((error) => {
         console.error('Erro ao abrir o link:', error);
       });
+  };
+
+  const handleOpenURL = (url) => {
+    if (url === 'https://www.embrapa.br/florestas/publicacoes/especies-arboreas-brasileiras') {
+      Alert.alert(
+        'Confirmação',
+        'Espécie não encontrada no catalogo, deseja seguir para a Central de Espécies?',
+        [
+          {
+            text: 'Cancelar',
+            style: 'cancel',
+          },
+          {
+            text: 'Sim',
+            onPress: () => {
+              // Abrir o link normalmente se o usuário escolher "Sim"
+              openURLInBrowser(url);
+            },
+          },
+        ],
+        { cancelable: false }
+      );
+    } else {
+      // Se não for o link específico, abrir normalmente
+      openURLInBrowser(url);
+    }
   };
 
   // Função para renderizar os ícones dos usos econômicos
