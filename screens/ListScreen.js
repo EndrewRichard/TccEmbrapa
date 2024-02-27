@@ -12,55 +12,83 @@ const ListScreen = ({ navigation }) => {
   const [filteredData, setFilteredData] = useState(data.Dado);
   const [showFilterModal, setShowFilterModal] = useState(false);
   const [selectedFilters, setSelectedFilters] = useState({});
+  const [selectedGroupFilters, setSelectedGroupFilters] = useState({});
 
   useEffect(() => {
     filterData();
   }, [searchText, selectedFilters]);
 
-
+  const handleFilterChange = (newSelectedGroupFilters) => {
+    console.log(
+      'listdata 1:',
+    );
+    setSelectedGroupFilters(newSelectedGroupFilters);
+    filterData();
+  };
 
   const filterData = async () => {
     const favorites = await getFavorites();
 
     const filteredItems = data.Dado.filter(
       (item) =>
-        (item.ESPÉCIE && item.ESPÉCIE.toLowerCase().includes(searchText.toLowerCase())) ||
-        (item.NOME_VULGAR && item.NOME_VULGAR.toLowerCase().includes(searchText.toLowerCase()))
+        (item.ESPÉCIE &&
+          item.ESPÉCIE.toLowerCase().includes(searchText.toLowerCase())) ||
+        (item.NOME_VULGAR &&
+          item.NOME_VULGAR.toLowerCase().includes(searchText.toLowerCase()))
     );
-
-
 
     let filteredByFilters = [...filteredItems];
 
+  Object.keys(selectedGroupFilters).forEach((groupKey) => {
+    const selectedFiltersInGroup = selectedGroupFilters[groupKey];
+    if (selectedFiltersInGroup) {
+      // Ajuste para considerar apenas os itens com valor 1
+      filteredByFilters = filteredByFilters.filter((item) => {
+        const itemGroupValues = item[groupKey];
+
+        // Verifique se o valor do item é 1
+        return itemGroupValues && itemGroupValues === 1;
+      });
+    }
+  });
+
+
     if (selectedFilters['TOL_SOMBRA']) {
-      filteredByFilters = filteredByFilters.filter(item =>
-        item['TOL_SOMBRA'].toLowerCase() === selectedFilters['TOL_SOMBRA'].toLowerCase()
+      filteredByFilters = filteredByFilters.filter(
+        (item) =>
+          item['TOL_SOMBRA'].toLowerCase() ===
+          selectedFilters['TOL_SOMBRA'].toLowerCase()
       );
     }
 
     if (selectedFilters['ESTRATEGIA_DISPERSAO']) {
-      filteredByFilters = filteredByFilters.filter(item =>
-        item['ESTRATEGIA_DISPERSAO'].toLowerCase() === selectedFilters['ESTRATEGIA_DISPERSAO'].toLowerCase()
+      filteredByFilters = filteredByFilters.filter(
+        (item) =>
+          item['ESTRATEGIA_DISPERSAO'].toLowerCase() ===
+          selectedFilters['ESTRATEGIA_DISPERSAO'].toLowerCase()
       );
     }
 
     if (selectedFilters['ESTRATEGIA_OCUPACAO']) {
-      filteredByFilters = filteredByFilters.filter(item =>
-        item['ESTRATEGIA_OCUPACAO'].toLowerCase() === selectedFilters['ESTRATEGIA_OCUPACAO'].toLowerCase()
+      filteredByFilters = filteredByFilters.filter(
+        (item) =>
+          item['ESTRATEGIA_OCUPACAO'].toLowerCase() ===
+          selectedFilters['ESTRATEGIA_OCUPACAO'].toLowerCase()
       );
     }
-        if (selectedFilters['AMEACADO']) {
-      filteredByFilters = filteredByFilters.filter(item =>
-        item['AMEACADO'] === selectedFilters['AMEACADO']
+    if (selectedFilters['AMEACADO']) {
+      filteredByFilters = filteredByFilters.filter(
+        (item) => item['AMEACADO'] === selectedFilters['AMEACADO']
       );
     }
-
 
     filteredByFilters.sort((a, b) => {
       const isAFavorite = favorites.includes(a.ESPÉCIE);
       const isBFavorite = favorites.includes(b.ESPÉCIE);
       return isBFavorite - isAFavorite;
     });
+
+
 
     setFilteredData(filteredByFilters);
   };
@@ -90,14 +118,14 @@ const ListScreen = ({ navigation }) => {
 
   const handleToggleFilterModal = () => {
     setShowFilterModal(!showFilterModal);
-
   };
   const handleToggleFilter = (filterKey) => {
     setSelectedFilters((prevFilters) => {
       if (filterKey === 'ESTRATEGIA_OCUPACAO') {
         const occupationOptions = ['diversidade', 'recobrimento', ''];
         const currentIndex = occupationOptions.indexOf(prevFilters[filterKey]);
-        const newValue = occupationOptions[(currentIndex + 1) % occupationOptions.length];
+        const newValue =
+          occupationOptions[(currentIndex + 1) % occupationOptions.length];
         return {
           ...prevFilters,
           [filterKey]: newValue,
@@ -115,25 +143,43 @@ const ListScreen = ({ navigation }) => {
       }
 
       if (filterKey === 'ESTRATEGIA_DISPERSAO') {
-        const dispersaoOptions = ['autocórica', 'zoocórica', 'anemocórica', 'endozoocórica', 'hidrocórica', ''];
+        const dispersaoOptions = [
+          'autocórica',
+          'zoocórica',
+          'anemocórica',
+          'endozoocórica',
+          'hidrocórica',
+          '',
+        ];
         const currentIndex = dispersaoOptions.indexOf(prevFilters[filterKey]);
-        const newValue = dispersaoOptions[(currentIndex + 1) % dispersaoOptions.length];
+        const newValue =
+          dispersaoOptions[(currentIndex + 1) % dispersaoOptions.length];
         return {
           ...prevFilters,
           [filterKey]: newValue,
         };
       }
       if (filterKey === 'AMEACADO') {
-        const ameacadoOptions = ['LC', 'NT', 'VU', 'EN', 'CR', 'EW', 'EX',  'DD', 'NE', ''];
+        const ameacadoOptions = [
+          'LC',
+          'NT',
+          'VU',
+          'EN',
+          'CR',
+          'EW',
+          'EX',
+          'DD',
+          'NE',
+          '',
+        ];
         const currentIndex = ameacadoOptions.indexOf(prevFilters[filterKey]);
-        const newValue = ameacadoOptions[(currentIndex + 1) % ameacadoOptions.length];
+        const newValue =
+          ameacadoOptions[(currentIndex + 1) % ameacadoOptions.length];
         return {
           ...prevFilters,
           [filterKey]: newValue,
         };
-
-}
-
+      }
 
       // Outras chaves podem ser tratadas aqui, se necessário
 
@@ -148,6 +194,11 @@ const ListScreen = ({ navigation }) => {
   const clearFilters = () => {
     setSelectedFilters({});
   };
+  
+  const clearAllFilters = () => {
+    setSelectedFilters({});
+    setSelectedGroupFilters({});
+  };
 
   return (
     <View style={styles.container}>
@@ -160,12 +211,17 @@ const ListScreen = ({ navigation }) => {
         />
       </View>
 
-      <Modal visible={showFilterModal} animationType="slide" onRequestClose={handleToggleFilterModal}>
+      <Modal
+        visible={showFilterModal}
+        animationType="slide"
+        onRequestClose={handleToggleFilterModal}>
         <FilterDrawer
           selectedFilters={selectedFilters}
           onToggleFilter={handleToggleFilter}
           onClose={handleToggleFilterModal}
-          clearFilters={clearFilters} // Passar a função clearFilters para o FilterDrawer
+          clearAllFilters={clearAllFilters} // Passar a função clearFilters para o FilterDrawer
+          onFilterChange={handleFilterChange}
+          onFilterGroupChange={handleFilterChange}
         />
       </Modal>
 
@@ -178,10 +234,12 @@ const ListScreen = ({ navigation }) => {
       />
       <FAB
         style={styles.fab}
-        icon={({ color, size }) => <Ionicons name="filter" color={'#006122'} size={size} />}
+        icon={({ color, size }) => (
+          <Ionicons name="filter" color={'#006122'} size={size} />
+        )}
         onPress={() => {
           handleToggleFilterModal();
-          clearFilters(); // Chame a função clearFilters aqui
+          clearAllFilters(); // Chame a função clearFilters aqui
         }}
       />
     </View>

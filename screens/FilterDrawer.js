@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 
-const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }) => {
+const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearAllFilters, onFilterGroupChange }) => {
 
 
 
@@ -87,19 +87,19 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
     { key: "ESTRATEGIA_DISPERSAO", label: "Dispersão de Frutos" }
   ];
   const getFullText = (abbreviation) => {
-  const textMappings = {
-    'EX': 'Extinta',
-    'EW': 'Extinta na natureza',
-    'CR': 'Criticamente em perigo',
-    'EN': 'Em perigo',
-    'VU': 'Vulnerável',
-    'NT': 'Quase ameaçado',
-    'LC': 'Baixo risco',
-    'DD': 'Deficiente de dados',
-    'NE': 'Não avaliada',
+    const textMappings = {
+      'EX': 'Extinta',
+      'EW': 'Extinta na natureza',
+      'CR': 'Criticamente em perigo',
+      'EN': 'Em perigo',
+      'VU': 'Vulnerável',
+      'NT': 'Quase ameaçado',
+      'LC': 'Baixo risco',
+      'DD': 'Deficiente de dados',
+      'NE': 'Não avaliada',
+    };
+    return textMappings[abbreviation] || abbreviation;
   };
-  return textMappings[abbreviation] || abbreviation;
-};
 
 
   // Grupos de filtros
@@ -119,7 +119,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
 
   ];
 
-  
+
 
 
   // Estado para controlar os filtros marcados em cada grupo
@@ -129,6 +129,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
   const [OcupValue, setOcupValue] = useState(selectedFilters['ESTRATEGIA_OCUPACAO'] || null);
   const [DispValue, setDispValue] = useState(selectedFilters['ESTRATEGIA_DISPERSAO'] || null);
   const [AmeacValue, setAmeacValue] = useState(selectedFilters['AMEACADO'] || null);
+
 
 
 
@@ -159,7 +160,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
     //console.log('Filtros Selecionados:', selectedFilters);
 
   };
-   console.log('Filtros Selecionados:', selectedFilters);
+  console.log('Filtros Selecionados:', selectedFilters);
 
 
 
@@ -169,32 +170,19 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
 
 
 
-    // Se o filtro atual já estava selecionado, desmarca-o
-    if (newSelectedGroupFilters[groupIndex] === filterKey) {
-      newSelectedGroupFilters[groupIndex] = null;
-      setSelectedGroupFilters(newSelectedGroupFilters);
-      onToggleFilter(filterKey);
-      return;
-    }
-
-    // Desmarca todos os filtros do grupo
-    const group = groups[groupIndex];
-    group.filters.forEach((filter) => {
-      if (newSelectedGroupFilters[groupIndex] === filter.key) {
-        onToggleFilter(filter.key); // Desmarca o filtro irmão
-      }
-    });
-
-    newSelectedGroupFilters[groupIndex] = filterKey;
+    newSelectedGroupFilters[filterKey] = !newSelectedGroupFilters[filterKey];
     setSelectedGroupFilters(newSelectedGroupFilters);
-    onToggleFilter(filterKey); // Marca o filtro atual
 
-      console.log('Novos filtros de grupo selecionados:', newSelectedGroupFilters);
+
+
+    onFilterGroupChange(newSelectedGroupFilters);
+
+    console.log('Novos filtros de grupo selecionados:', newSelectedGroupFilters);
 
   };
   // Função para limpar todos os filtros selecionados e redefinir o estado dos grupos
   const handleClearFilters = () => {
-    clearFilters();
+    clearAllFilters();
     onClose();
     // Limpar os filtros chamando a função recebida como prop
   };
@@ -215,7 +203,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
       </View>
 
 
-      {groups.map((group, groupIndex) => (
+{groups.map((group, groupIndex) => (
         <View key={groupIndex} style={[styles.card, expandedGroupIndex === groupIndex && styles.cardExpanded]}>
           <TouchableOpacity
             onPress={() => setExpandedGroupIndex(expandedGroupIndex === groupIndex ? null : groupIndex)}
@@ -233,7 +221,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
                 >
                   <Text style={styles.filterLabel}>{filter.label}</Text>
                   <View style={styles.checkbox}>
-                    {selectedGroupFilters[groupIndex] === filter.key ? <Text style={styles.checkmark}>✓</Text> : null}
+                    {selectedGroupFilters[filter.key] ? <Text style={styles.checkmark}>✓</Text> : null}
                   </View>
                 </TouchableOpacity>
               ))}
@@ -259,7 +247,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearFilters }
                   <Text style={styles.filterLabel}>Estratégia de Ocupação:</Text>
                   <Text style={styles.selectedFilter}>
                     {selectedFilters['ESTRATEGIA_OCUPACAO'] || 'Selecione uma opção'}
-                    
+
                   </Text>
                 </View>
               </TouchableOpacity>
