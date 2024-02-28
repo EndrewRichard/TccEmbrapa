@@ -106,7 +106,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearAllFilter
   const groups = [
     { title: 'Onde ocorre', filters: filters.slice(25, 52) },
     { title: 'Tipos de vegetação', filters: filters.filter(filter => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].includes(filters.indexOf(filter))) },
-    { title: 'Textura', filters: filters.slice(12, 16) },
+    { title: 'Caracteristicas do solo', filters: filters.slice(12, 16) },
     { title: 'Fertilidade', filters: filters.slice(16, 18) },
     { title: 'Drenagem', filters: filters.slice(18, 22) },
     { title: 'Caracteristicas ecologicas', filters: filters.slice(99, 100) },
@@ -274,7 +274,6 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearAllFilter
                   <Text style={styles.filterLabel}>Nivel extinção: </Text>
                   <Text style={styles.selectedFilter}>
                     {getFullText(selectedFilters['AMEACADO']) || 'Selecione uma opção'}
-                    {'\n'}
                   </Text>
                 </View>
               </TouchableOpacity>
