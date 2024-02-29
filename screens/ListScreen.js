@@ -14,17 +14,22 @@ const ListScreen = ({ navigation }) => {
   const [selectedFilters, setSelectedFilters] = useState({});
   const [selectedGroupFilters, setSelectedGroupFilters] = useState({});
 
+
+  
   useEffect(() => {
     filterData();
-  }, [searchText, selectedFilters]);
+  }, [searchText, selectedFilters, selectedGroupFilters]);
 
   const handleFilterChange = (newSelectedGroupFilters) => {
-    console.log(
-      'listdata 1:',
-    );
     setSelectedGroupFilters(newSelectedGroupFilters);
+
+    console.log('Estado atualizado1:', selectedGroupFilters);
     filterData();
+
   };
+  console.log('Estado atualizado2:', selectedGroupFilters);
+
+
 
   const filterData = async () => {
     const favorites = await getFavorites();
@@ -39,19 +44,20 @@ const ListScreen = ({ navigation }) => {
 
     let filteredByFilters = [...filteredItems];
 
-  Object.keys(selectedGroupFilters).forEach((groupKey) => {
-    const selectedFiltersInGroup = selectedGroupFilters[groupKey];
-    if (selectedFiltersInGroup) {
-      // Ajuste para considerar apenas os itens com valor 1
-      filteredByFilters = filteredByFilters.filter((item) => {
-        const itemGroupValues = item[groupKey];
+    Object.keys(selectedGroupFilters).forEach((groupKey) => {
+      const selectedFiltersInGroup = selectedGroupFilters[groupKey];
 
-        // Verifique se o valor do item é 1
-        return itemGroupValues && itemGroupValues === 1;
-      });
-    }
-  });
+      if (selectedFiltersInGroup) {
+        // Ajuste para considerar apenas os itens com valor associado
+        filteredByFilters = filteredByFilters.filter((item) => {
+          const itemGroupValues = item[groupKey];
 
+          // Verifique se o valor do item é 1
+
+          return itemGroupValues && itemGroupValues === 1;
+        });
+      }
+    });
 
     if (selectedFilters['TOL_SOMBRA']) {
       filteredByFilters = filteredByFilters.filter(
@@ -88,8 +94,6 @@ const ListScreen = ({ navigation }) => {
       return isBFavorite - isAFavorite;
     });
 
-
-
     setFilteredData(filteredByFilters);
   };
 
@@ -97,6 +101,7 @@ const ListScreen = ({ navigation }) => {
     try {
       const favoritesString = await AsyncStorage.getItem('@favorites');
       return favoritesString ? JSON.parse(favoritesString) : [];
+
     } catch (error) {
       console.error('Error getting favorites from AsyncStorage:', error);
       return [];
@@ -107,6 +112,7 @@ const ListScreen = ({ navigation }) => {
     try {
       const favoritesString = JSON.stringify(favorites);
       await AsyncStorage.setItem('@favorites', favoritesString);
+
     } catch (error) {
       console.error('Error saving favorites to AsyncStorage:', error);
     }
@@ -187,14 +193,6 @@ const ListScreen = ({ navigation }) => {
     });
   };
 
-  const handleClearFilters = () => {
-    setSelectedFilters({});
-  };
-
-  const clearFilters = () => {
-    setSelectedFilters({});
-  };
-  
   const clearAllFilters = () => {
     setSelectedFilters({});
     setSelectedGroupFilters({});

@@ -65,7 +65,7 @@ const DetailsScreen = ({ route, navigation }) => {
   const openURLInBrowser = (url) => {
     Linking.openURL(url)
       .then(() => {
-        console.log('Link aberto no navegador:', url);
+        //console.log('Link aberto no navegador:', url);
       })
       .catch((error) => {
         console.error('Erro ao abrir o link:', error);
@@ -139,9 +139,9 @@ const handleOpenURL = (url) => {
   const [relacaoAmbienteOpen, setRelacaoAmbienteOpen] = useState(false);
   const [ciclosOpen, setCiclosOpen] = useState(false);
 
-  console.log('Valor de item.AMEACADO:', item.AMEACADO);
+  //console.log('Valor de item.AMEACADO:', item.AMEACADO);
   const threatColor = getThreatColor(item.AMEACADO);
-  console.log('Cor do nível de extinção:', threatColor);
+  //console.log('Cor do nível de extinção:', threatColor);
 
 
 

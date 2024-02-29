@@ -84,14 +84,14 @@ const SobreScreen = () => {
                     <Text
                         style={styles.hyperlinkStyle}
                         onPress={() => {
-                            Linking.openURL('https://www.linkedin.com');
+                            Linking.openURL('https://www.linkedin.com/in/pedrovieiracruz/');
                         }}>
                         Pedro Vieira Cruz</Text>
                     {'\n'}
                     <Text
                         style={styles.hyperlinkStyle}
                         onPress={() => {
-                            Linking.openURL('https://www.linkedin.com/');
+                            Linking.openURL('https://www.linkedin.com/in/renan-miranda-0690a5121');
                         }}>
                         Renan Carvalho Tavora Miranda</Text>
                     {'\n'}{'\n'}
@@ -106,7 +106,7 @@ const SobreScreen = () => {
                     {'\n'}{'\n'}
 
 
-                    <Text style={styles.wordBold}>Padrinho da equipe Dobereiner e do projeto {'\n'}</Text>
+                    <Text style={styles.wordBold}>Padrinho da equipe Döbereiner e do projeto {'\n'}</Text>
                     <Text>Dr. Luiz Fernando Duarte de Moraes (EMBRAPA){'\n'}</Text>
                     <Text
                         style={styles.hyperlinkStyle}

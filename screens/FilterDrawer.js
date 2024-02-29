@@ -62,24 +62,24 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearAllFilter
     { key: "LENTO", label: "Lento" },
     { key: "RAPIDO", label: "Rápido" },
     { key: "MUITO_RAPIDO", label: "Muito Rápido" },
-    { key: "USO_ALIMENTACAO", label: "Uso Alimentação" },
-    { key: "USO_ARTESANATO", label: "Uso Artesanato" },
+    { key: "USO_ALIMENTACAO", label: "Usado para alimentação" },
+    { key: "USO_ARTESANATO", label: "Usado para artesanato" },
     { key: "USO_AROMATICO", label: "Uso Aromático" },
-    { key: "USO_CORT", label: "Uso Cort" },
-    { key: "USO_COND", label: "Uso Cond" },
-    { key: "USO_COSMETICO", label: "Uso Cosmético" },
-    { key: "USO_FORRAGEM", label: "Uso Forragem" },
-    { key: "USO_FIBRAS", label: "Uso Fibras" },
-    { key: "USO_LATEX", label: "Uso Látex" },
-    { key: "USO_MADEIRA", label: "Uso Madeira" },
+    { key: "USO_CORT", label: "Usado para cortiça" },
+    { key: "USO_COND", label: "Usado em condimentos" },
+    { key: "USO_COSMETICO", label: "Uso cosmético" },
+    { key: "USO_FORRAGEM", label: "Usado para forragem" },
+    { key: "USO_FIBRAS", label: "Usado para fibras" },
+    { key: "USO_LATEX", label: "Usado para Látex" },
+    { key: "USO_MADEIRA", label: "Usado para Madeira" },
     { key: "USO_MEDICINAL", label: "Uso Medicinal" },
     { key: "USO_MELIFERA", label: "Uso Melífera" },
-    { key: "USO_OLEO", label: "Uso Óleo" },
+    { key: "USO_OLEO", label: "Extração de óleo" },
     { key: "USO_ORNAMENTAL", label: "Uso Ornamental" },
-    { key: "USO_RESINA", label: "Uso Resina" },
-    { key: "USO_RAD", label: "Uso Rad" },
+    { key: "USO_RESINA", label: "Usado para resina" },
+    { key: "USO_RAD", label: "Uso em RAD" },
     { key: "USO_TANINO", label: "Uso Tanino" },
-    { key: "USO_TINTURA", label: "Uso Tintura" },
+    { key: "USO_TINTURA", label: "Usado para tintura" },
     { key: "USO_TOXICO", label: "Uso Tóxico" },
     { key: "AMEACADO", label: "Ameaçado" },
     { key: "TOL_SOMBRA", label: "Tolerância à Sombra" },
@@ -157,29 +157,29 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearAllFilter
   const handleSelectAmeac = () => {
     setAmeacValue('');
     onToggleFilter('AMEACADO', '');
-    //console.log('Filtros Selecionados:', selectedFilters);
+    ////console.log('Filtros Selecionados:', selectedFilters);
 
   };
-  console.log('Filtros Selecionados:', selectedFilters);
 
+//console.log('Filtros Selecionados de opçoes:', selectedFilters);
 
 
   // Função para tratar a marcação/desmarcação de filtros em cada grupo
-  const handleToggleFilterGroup = (groupIndex, filterKey) => {
-    const newSelectedGroupFilters = { ...selectedGroupFilters };
+const handleToggleFilterGroup = (groupIndex, filterKey) => {
+  setSelectedGroupFilters((prevFilters) => {
+    const updatedFilters = { ...prevFilters, [filterKey]: !prevFilters[filterKey] };
 
+    // Remova filtros desmarcados
+    const selectedFilters = Object.fromEntries(
+      Object.entries(updatedFilters).filter(([key, value]) => value)
+    );
 
+    onFilterGroupChange(selectedFilters);
+    //console.log('Novos filtros de grupo selecionados no filter drawer:', selectedFilters);
 
-    newSelectedGroupFilters[filterKey] = !newSelectedGroupFilters[filterKey];
-    setSelectedGroupFilters(newSelectedGroupFilters);
-
-
-
-    onFilterGroupChange(newSelectedGroupFilters);
-
-    console.log('Novos filtros de grupo selecionados:', newSelectedGroupFilters);
-
-  };
+    return selectedFilters;
+  });
+};
   // Função para limpar todos os filtros selecionados e redefinir o estado dos grupos
   const handleClearFilters = () => {
     clearAllFilters();
@@ -213,18 +213,18 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearAllFilter
           </TouchableOpacity>
           {expandedGroupIndex === groupIndex && (
             <View style={styles.cardContent}>
-              {group.filters.map((filter) => (
-                <TouchableOpacity
-                  key={filter.key}
-                  style={styles.filterItem}
-                  onPress={() => handleToggleFilterGroup(groupIndex, filter.key)}
-                >
-                  <Text style={styles.filterLabel}>{filter.label}</Text>
-                  <View style={styles.checkbox}>
-                    {selectedGroupFilters[filter.key] ? <Text style={styles.checkmark}>✓</Text> : null}
-                  </View>
-                </TouchableOpacity>
-              ))}
+{group.filters.map((filter) => (
+  <TouchableOpacity
+    key={filter.key}
+    style={styles.filterItem}
+    onPress={() => handleToggleFilterGroup(groupIndex, filter.key)}
+  >
+    <Text style={styles.filterLabel}>{filter.label}</Text>
+    <View style={styles.checkbox}>
+      {selectedGroupFilters[filter.key] ? <Text style={styles.checkmark}>✓</Text> : null}
+    </View>
+  </TouchableOpacity>
+))}
             </View>
           )}
           {groupIndex === 5 && expandedGroupIndex === groupIndex && (
@@ -233,7 +233,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearAllFilter
                 <View style={styles.filterRow}>
                   <Text style={styles.filterLabel}>Tolerancia a sombra:      </Text>
                   <Text style={styles.selectedFilter}>
-                    {selectedFilters['TOL_SOMBRA'] || 'Selecione uma opção'}
+                    {selectedFilters['TOL_SOMBRA'] || 'Selecionar'}
                   </Text>
                 </View>
               </TouchableOpacity>
@@ -246,7 +246,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearAllFilter
                 <View style={styles.filterRow}>
                   <Text style={styles.filterLabel}>Estratégia de Ocupação:</Text>
                   <Text style={styles.selectedFilter}>
-                    {selectedFilters['ESTRATEGIA_OCUPACAO'] || 'Selecione uma opção'}
+                    {selectedFilters['ESTRATEGIA_OCUPACAO'] || 'Selecionar'}
 
                   </Text>
                 </View>
@@ -260,7 +260,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearAllFilter
                 <View style={styles.filterRow}>
                   <Text style={styles.filterLabel}>Estratégia de Disperção: </Text>
                   <Text style={styles.selectedFilter}>
-                    {selectedFilters['ESTRATEGIA_DISPERSAO'] || 'Selecione uma opção'}
+                    {selectedFilters['ESTRATEGIA_DISPERSAO'] || 'Selecionar'}
                   </Text>
                 </View>
               </TouchableOpacity>
@@ -273,7 +273,7 @@ const FilterDrawer = ({ selectedFilters, onToggleFilter, onClose, clearAllFilter
                 <View style={styles.filterRow}>
                   <Text style={styles.filterLabel}>Nivel extinção: </Text>
                   <Text style={styles.selectedFilter}>
-                    {getFullText(selectedFilters['AMEACADO']) || 'Selecione uma opção'}
+                    {getFullText(selectedFilters['AMEACADO']) || 'Selecionar'}
                   </Text>
                 </View>
               </TouchableOpacity>
@@ -293,6 +293,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
+    marginTop: '5%',
     backgroundColor: 'white',
   },
   selectedFilter: {
