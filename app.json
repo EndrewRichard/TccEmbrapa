@@ -19,12 +19,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "permissions": ["WRITE_EXTERNAL_STORAGE", "READ_EXTERNAL_STORAGE"],
         "foregroundImage": "./assets/icon1024.png",
         "backgroundColor": "#ffffff"
       },
       "package": "br.embrapa.restaura",
-      "versionCode": 11
+      "versionCode": 13,
+      "compileSdkVersion": 34,
+      "targetSdkVersion": 34,
+      "minSdkVersion": 21
     },
     "web": {
       "favicon": "./assets/icon1024.png"
@@ -34,9 +36,7 @@
         "projectId": "f3724ab6-536d-45fd-969c-c292e77ea76d"
       }
     },
-    "runtimeVersion": {
-      "policy": "apk"
-    },
+    "runtimeVersion": "current",  
     "updates": {
       "url": "https://u.expo.dev/f3724ab6-536d-45fd-969c-c292e77ea76d"
     }
